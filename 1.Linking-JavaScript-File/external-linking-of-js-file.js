@@ -1,0 +1,1 @@
+alert("This alert from the .js file");
