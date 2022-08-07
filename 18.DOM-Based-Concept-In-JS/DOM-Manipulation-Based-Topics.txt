@@ -1,0 +1,29 @@
+DOM Fundamentals Topics
+========================
+What is the DOM?
+DOM Tree Analogy
+Selecting Elements in the DOM
+Styling an Element
+Creating Elements
+Adding Elements
+Modify Text
+Modifying Elements Attributes & Classes
+Remove an Element
+DOM Tree Recap
+Traversing the DOM
+Event Listeners
+Event Listener Example
+Event Propagation
+Event Delegation
+Introduction to Projects
+
+DOM Based Basic Topics
+======================
+DOM Tree
+DOM Manipulation- DOM Selectors
+DOM Nodes- DOM Navigational Elements
+DOM Collection
+DOM Events
+DOM Styling Elemenets
+DOM Attributes
+

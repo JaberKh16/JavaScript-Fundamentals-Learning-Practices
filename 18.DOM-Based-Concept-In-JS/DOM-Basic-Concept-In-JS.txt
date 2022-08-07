@@ -1,0 +1,59 @@
+DOM Concept In JS
+=================
+DOM stands for Document Object Model which is used to manipulate document with JS. It is
+basically used to manipulate HTML and CSS elements dynamically of the web page to make the
+page more dynamic and interactive.
+
+DOM is a cross-platform and language independent model for representing and interacting with elements
+in HTML documents.
+
+DOM is neither a part of HTML nor a part of JavaScript instead a set of rules and can't acccess without having a document.
+
+
+DOM Based Related Topics To Cover
+=================================
+1) Manipulation on individual/multiple elements
+2) DOM Styles
+3) DOM Classes
+4) Events
+5) Set/Get Attributes
+6) DOM Navigation
+
+
+Nodes Concept
+=============
+DOM is a collection of nodes. Everyting in HTML document is a node.
+
+Types of nodes
+--------------
+there are two types of nodes basically can be found in HTML document in an upper point of view which are-
+	
+	1) Parent Node
+	2) Child Node 
+
+When we are talking about nodes then there's need to be consider three main things which are the following,
+	
+	1) Element Nodes
+	2) Text Nodes
+	3) Attribute Nodes
+
+Now see the below example-
+	
+	<p class = 'paragragh'> this is a text content </p>
+
+Here, "<p> </p>" itself is a Element Node, 'class' is Attribute Node and inside the p tag whatever 
+content is written consider as a Text Node.
+ 
+
+
+DOM Based Methods
+=================
+1) document.getElementById('id_value');  // used to get the element through 'id'
+2) document.getElementByClassName('class_value'); // used to get the element through class name
+3) document.getElementByTagName('tag_name'); // used to get the element through tag name
+4) document.querySelectorsAll('property- class/id/attribute'); // used get the query selector
+5) document.write('anystring'); // used to write directly to the browser, not encourage to use though with page load overrides everything
+6) document.innerText = "anystring"; // used to change the inner text of any element
+7) doucment.innerHTML = "anystring"; // used to change the HTML content of an element
+8) document.getElementById().propertyName; // used to change the CSS property value of HTML attribute.
+9) document.getElementById().addEventListener("eventName", functionName); // used to perform action based on event name provided.

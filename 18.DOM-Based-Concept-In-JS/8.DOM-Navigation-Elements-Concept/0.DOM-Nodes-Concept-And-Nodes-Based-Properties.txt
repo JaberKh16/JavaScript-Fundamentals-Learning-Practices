@@ -1,0 +1,53 @@
+DOM Nodes Concept and DOM Nodes Based Properties
+================================================
+HTML DOM standard, everything in an HTML document is a node:
+
+ 	1) The Entire document is a Document Node
+	2) Every HTML element is an Element Node
+	3) The text inside HTML elements are Text Nodes
+	4) Every HTML Attribute is an Attribute Node (deprecated)
+	5) All comments are Comment Nodes
+
+a) Types of Nodes
+   --------------
+   1) ELEMENT_NODE        ==> <h1 class=''> Content </h1>
+   2) ATTRIBUTE_NODE      ==> class='', id='' or any attributes
+   3) TEXT_NODE           ==> Any textual node (whitespace, text, tab, newline)
+   4) COMMENT_NODE        ==> <!-- Comment Text -->
+   5) DOCUMENT_NODE       ==> HTML Document itself(<html>)
+   6) DOCUMENT_TYPE_NODE  ==> <!Doctype html>
+
+
+b) DOM Navigationl Nodes
+   ----------------------
+   1)  HTMLElement.parentNode
+   2)  HTMLElement.childNodes
+   3)  HTMLElement.children
+   4)  HTMLElement.firstChild
+   5)  HTMLElement.firstElementChild
+   6)  HTMLElement.lastChild
+   7)  HTMLElement.lastElementChild
+   8)  HTMLElement.previousSibling
+   9)  HTMLElement.nextSibling
+   10) HTMLElement.previousElementSibling
+   11) HTMLElement.nextElementSibling
+
+
+c) DOM Navigational Properties
+    ---------------------------
+    a) nodeType
+        - specifies the type of the node.
+        - read-only property.
+        - returns value as integer value for each of the nodes.
+    b) nodeValue
+        - specifies the value of a node.
+        - nodeValue for "Element Node" is 'null'
+        - nodeValue for "Text Node" is text itself.
+        - nodeValue for "Attribute Node" is the attribute value.
+    c) nodeName
+        - specifies the name of the node.
+        - read-only property.
+        - nodeName of an "Element Node" is the same as tag name.
+        - nodeName of the "Document Node" is always the #document.
+        - nodeName of the "Text Node" is the #textNode
+        - nodeName always contains the uppercase tag name of a HTML Element.
