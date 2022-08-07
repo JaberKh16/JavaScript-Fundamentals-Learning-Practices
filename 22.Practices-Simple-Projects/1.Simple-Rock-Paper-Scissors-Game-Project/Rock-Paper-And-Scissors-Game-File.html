@@ -1,0 +1,47 @@
+<!--Rock, Paper And Scissor Game Project-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper And Scissor Game</title>
+    <link rel="stylesheet" href="./css/rock-paper-and-scissor-game-design-file.css">
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper And Scissor Game</h1>
+        <img src="./img/game-theme-image-2.png" class="game-theme-img-left" alt="Game Theme Image">
+        <img src="./img/game-theme-image-2.png" class="game-theme-img-right" alt="Game Theme Image">
+    </header>
+    <div class="score-board">
+        <div id="user-label" class="badge"><p>User Score</p></div>
+        <div id="computer-label" class="badge"><p>Computer Score</p></div>
+        <span id="user-score">0</span> <span id="divider-between-span">:</span> <span id="computer-score">0</span>
+        <div class="result-content">
+            <p>Scissor cuts Papers,, you win!!!</p>
+        </div>
+    </div>
+
+    <!-- Images Container-->
+    <div class="images-div">
+        <!--Paper Picture Division-->
+        <div class="choices-list" id="paper">
+            <img src="./img/paper-image.png" alt="Papers Image">
+        </div>
+        <!--Scissor Picture Division-->
+        <div class="choices-list" id="scissor">
+            <img src="./img/scissor-image.png" alt="Scissor Image">
+        </div>
+        <!--Rock Picture Division-->
+        <div class="choices-list" id="rock">
+            <img src="./img/rock-image4.png" alt="Rock Image">
+        </div>
+    </div>
+    <p class="action-diaglog">Make Your Move.</p>
+
+    <!-- Including The JS File-->
+    <script src="./js/Rock-Paper-And-Scissor-Game-Dev-File.js"></script>
+</body>
+</html>
