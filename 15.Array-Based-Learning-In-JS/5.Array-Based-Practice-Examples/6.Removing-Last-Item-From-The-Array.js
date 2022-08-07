@@ -1,5 +1,5 @@
 /*
-    Question-5. Removing Last Item From The Array
+    Question-6. Removing Last Item From The Array
 
     Hint- use arr.pop() to remove the last item which returns removed item
 */

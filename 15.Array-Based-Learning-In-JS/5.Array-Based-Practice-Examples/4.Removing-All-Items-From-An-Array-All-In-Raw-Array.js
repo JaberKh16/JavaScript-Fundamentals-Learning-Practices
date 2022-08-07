@@ -14,12 +14,22 @@ const itemsArray = [1, 43, 6, 32, 78, 34, 9];
 
 // Way-1
 // defining a function to delete all elements from the array
-const removedAllItems2 = (arr)=>{
+const removedAllItemsWithoutModifying = (arr)=>{
     while(arr.length > 0){
         arr.pop(); // poping items while the array has some items
     }
     return arr;
 }
-console.log(removedAllItems2(itemsArray));
+console.log(removedAllItemsWithoutModifying(itemsArray));
 
+// Modifies the original array
+const removeWithoutCopy = function(arr, item) {
+    arr.filter((targetedValue)=>{
+        if(targetedValue != item )
+            return true;
+        else
+            return false; 
+    });
+}
 
+console.log(removeWithoutCopy(itemsArray, 32));

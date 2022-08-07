@@ -1,5 +1,5 @@
 /*
-    Question-5. Adding A Item At The Ending Of An Array
+    Question-8. Adding A Item At The Ending Of An Array
 
     Hint- use arr.push() appends at the ending and returns new length
 */
