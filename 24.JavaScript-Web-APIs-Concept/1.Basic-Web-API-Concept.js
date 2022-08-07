@@ -48,3 +48,24 @@
 
 // defining the 'use strict' statement
 'use strict';
+
+// getting the
+const coordinatesInfo = document.getElementById("coordinates-info");
+
+// getting the client location information 
+function gettingLocation() {
+    if (navigator.geolocation) {
+        console.log(navigator.geolocation);
+        console.log(navigator.geolocation.getCurrentPosition(gettingCoordinates));
+    } 
+    else {
+        coordinatesInfo.innerHTML = "Geolocation is not supported by this browser.";
+    }
+};
+
+
+// getting the coordinates value
+function gettingCoordinates(position) {
+    coordinatesInfo.innerHTML = `Latitude: ${position.coords.latitude} \
+    Longitude: ${position.coords.longitude}`;
+}

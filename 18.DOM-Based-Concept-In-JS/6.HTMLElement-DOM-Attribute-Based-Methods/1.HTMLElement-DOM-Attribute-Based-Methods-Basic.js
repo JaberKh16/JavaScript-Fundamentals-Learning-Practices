@@ -45,7 +45,11 @@ const buttonElement = document.getElementById('add-btn');
 const inputElement = document.getElementById('add-input');
 
 buttonElement.addEventListener('click', function(event){
-    console.log('Clicked on the submit buttion.'); // generally, button element has refresh issue means after a click it will refresh the page
-                                                   // thus blinkcing of the output can be seen and to resolve that use prevenDefault() method
+    console.log('Clicked on the submit buttion.'); 
+
+    // generally, button element has refresh issue means after 
+    // a click it will refresh the page thus blinkcing of the 
+    // output can be seen and to resolve that 
+    // use- prevenDefault() method
     event.preventDefault(); // solve the blinking issue
 })
