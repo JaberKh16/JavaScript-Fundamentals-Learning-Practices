@@ -1,0 +1,50 @@
+/*
+    DOM Navigational Elements- HTMLElement.childNodes
+    =================================================
+    HTMLElement.childNodes is used to get the "NodeList" of child
+    elment information, including #textnode/textual data(basically the
+    whitespaces surround with each items while arranging each <li> elements
+    in different line).
+    
+    #textnode - whitespaces, tab, newline 
+
+
+    DOM Navigational Properties
+    ---------------------------
+    a)  nodeType
+        - specifies the type of the node.
+        - read-only property.
+        - returns value as integer value for each of the nodes.
+    b) nodeValue
+        - specifies the value of a node.
+        - nodeValue for "Element Node" is 'null'
+        - nodeValue for "Text Node" is text itself.
+        - nodeValue for "Attribute Node" is the attribute value.
+    c) nodeName
+        - specifies the name of the node.
+        - read-only property.
+        - nodeName of an "Element Node" is the same as tag name.
+        - nodeName of the "Document Node" is always the #document.
+        - nodeName of the "Text Node" is the #textNode
+        - nodeName always contains the uppercase tag name of a HTML Element.
+
+*/
+
+// defining the 'use strict' statement
+'use strict';
+
+// taking the list items
+const listItems = document.querySelector('ul');
+console.log(listItems);
+
+// getting the child node
+if(listItems.hasChildNodes()){ // checking whether the element has child nodes or not
+    // saving the child nodes inside a variable
+    const childNodesOfListItems = listItems.childNodes;
+    console.log(childNodesOfListItems); // printing the 'NodeList'
+
+    // looping over the child nodes
+    for(let i=0; i<childNodesOfListItems.length; i++){
+        console.log(childNodesOfListItems[i].nodeName);
+    }
+}
