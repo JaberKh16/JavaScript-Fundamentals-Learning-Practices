@@ -49,15 +49,15 @@
 let worker; 
 
 // getting the start-worker id button
-const startWorker = document.getElementById('start-worker');
-startWorker.addEventListener('click', function startWebWorker(){
+const startWebWorker = document.getElementById('start-worker');
+startWebWorker.addEventListener('click', function (){
     // check whether the Web Worker Available or not
     if(typeof Worker !== "undefined"){
         // Web Worker is Available
         
         // checking the worker started or not
         if(typeof(worker) === "undefined"){
-            worker = new Worker("worker_file.js");
+            worker = new Worker("./web_worker_file/worker_file.js");
         }
         // listening from the worker file
         worker.onmessage = function(event){
@@ -71,8 +71,8 @@ startWorker.addEventListener('click', function startWebWorker(){
 });
 
 // getting the 'stop-worker' id button
-const stopWorker = document.getElementById('stop-worker');
-stopWorker.addEventListener('click', function stopWebWorker(){
+const stopWebWorker = document.getElementById('stop-worker');
+stopWebWorker.addEventListener('click', function (){
     // check whether the Web Worker Available or not
     if(typeof Worker !== "undefined"){
         // Web Worker is Available
