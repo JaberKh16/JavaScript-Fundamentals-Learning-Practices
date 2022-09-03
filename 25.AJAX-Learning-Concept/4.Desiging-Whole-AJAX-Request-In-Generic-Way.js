@@ -12,26 +12,34 @@ const sendRequest = function (method_type, url, content=null){
 
         // processing to the request when response is ready
         xhttp.onload = function (){
-            if(this.status === 200){
-                resolve(this.response);
+            resolve(this.response);
+        }
+
+        // to handle any kind of application error
+        xhttp.onerror = function(){
+            if(this.status >= 400){
+                reject(`Reuqest Hits an ${this.status}`);
             }
         }
 
+        // setting the content-type when working POST request
+        xhttp.setRequestHeader('content-type', "application/json");
+
         // sending request
-        xhttp.send();
+        xhttp.send(content);
     });
 
-    return Promise;
+    return promise;
     
 };
 
 
 // selecting the getting-data button
 const getData = document.getElementById('getting-data');
-getData.addEventListener('click', function(){
+getData.addEventListener('click', function(xhttp){
     sendRequest("GET", "https://jsonplaceholder.typicode.com/posts")
         .then(responseData => {
-            console.log(responseData);
+            console.log(JSON.parse(responseData));
         }).catch(error =>{
             console.log(`Error: ${error.message}`);
         })
@@ -42,10 +50,15 @@ getData.addEventListener('click', function(){
 // selecting the sending-data button
 const sendData = document.getElementById('sending-data');
 sendData.addEventListener('click', function(){
-    sendRequest("GET", "./file/person-info.json")
-        .then(responseData => {
-            console.log(responseData);
+    sendRequest("POST", "https://jsonplaceholder.typicode.com/posts", 
+        JSON.stringify({
+            title: 'foo',
+            body: 'bar',
+            userId: 1,
+        })
+    ).then(responseData => {
+            console.log(JSON.parse(responseData));
         }).catch(error =>{
-            console.log('Error hits..');
+            console.log(`Error: ${error.message}`);
         })
 });
