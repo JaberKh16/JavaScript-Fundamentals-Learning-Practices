@@ -1,0 +1,26 @@
+[
+    {
+        "id": 10023,
+        "name": "Rakel Jhonson",
+        "age": 34,
+        "gender": "Female",
+        "email": "rakeljhonson@gmail.com",
+        "profession":"Photografer"
+    },
+    {
+        "id": 10025,
+        "name": "Jonathan Richard",
+        "age": 24,
+        "gender": "Male",
+        "email": "jonathanrichard@gmail.com",
+        "profession":"Business-Analyst"
+    },
+    {
+        "id": 10026,
+        "name": "Richard Cash",
+        "age": 27,
+        "gender": "Male",
+        "email": "richardcash@gmail.com",
+        "profession":"Software Developer"
+    }
+]
