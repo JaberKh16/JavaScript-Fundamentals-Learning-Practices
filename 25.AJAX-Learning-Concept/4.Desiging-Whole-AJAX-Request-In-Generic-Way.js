@@ -12,14 +12,16 @@ const sendRequest = function (method_type, url, content=null){
 
         // processing to the request when response is ready
         xhttp.onload = function (){
+            // to handle application specific erros
+            if(this.status >= 400){
+                reject(`Reuqest Hits an ${this.response} and status code is ${this.status}`);
+            }
             resolve(this.response);
         }
 
-        // to handle any kind of application error
+        // to handle any kind of network specific error
         xhttp.onerror = function(){
-            if(this.status >= 400){
-                reject(`Reuqest Hits an ${this.status}`);
-            }
+            reject(`Request Hits an network specific error and status code is ${this.status}`);
         }
 
         // setting the content-type when working POST request
@@ -59,6 +61,6 @@ sendData.addEventListener('click', function(){
     ).then(responseData => {
             console.log(JSON.parse(responseData));
         }).catch(error =>{
-            console.log(`Error: ${error.message}`);
+            console.log(`Error: ${error}`);
         })
 });
