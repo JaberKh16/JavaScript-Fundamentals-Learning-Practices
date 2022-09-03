@@ -2,7 +2,7 @@
 'use strict';
 
 // defining the function to perform the sending request to the server
-function sendRequest(method_type, url, content=null){
+const sendRequest = function (method_type, url, content=null){
     const promise = new Promise((resolve, reject)=>{
         // initialize the request 
         const xhttp = new XMLHttpRequest();
@@ -19,17 +19,17 @@ function sendRequest(method_type, url, content=null){
 
         // sending request
         xhttp.send();
-    })
+    });
 
     return Promise;
     
-}
+};
 
 
-// selecting the get-data button
+// selecting the getting-data button
 const getData = document.getElementById('getting-data');
 getData.addEventListener('click', function(){
-    sendRequest("GET", "./file/person-info.json")
+    sendRequest("GET", "https://jsonplaceholder.typicode.com/posts")
         .then(responseData => {
             console.log(responseData);
         }).catch(error =>{
@@ -39,12 +39,13 @@ getData.addEventListener('click', function(){
 
 
 
-
-const sendData = function(){
+// selecting the sending-data button
+const sendData = document.getElementById('sending-data');
+sendData.addEventListener('click', function(){
     sendRequest("GET", "./file/person-info.json")
         .then(responseData => {
             console.log(responseData);
         }).catch(error =>{
             console.log('Error hits..');
         })
-}
+});
