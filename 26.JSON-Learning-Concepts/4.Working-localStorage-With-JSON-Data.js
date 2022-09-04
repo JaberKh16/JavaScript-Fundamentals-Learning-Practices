@@ -5,7 +5,7 @@
 const personInfo = {
     name: "Jonathan Rack",
     age:34,
-    birthdate: "function (){ return  new Date('1994-04-14');}",
+    birthdate: new Date('1994-04-14'),
     address:{
         street:"5 main st",
         city:"Boston"
