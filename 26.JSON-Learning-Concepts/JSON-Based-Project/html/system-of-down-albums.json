@@ -1,0 +1,34 @@
+{
+    "album_list":[
+        {
+            "band_name":"System Of Down",
+            "album_name":"Toxicity",
+            "album_cover":"https://upload.wikimedia.org/wikipedia/en/6/64/SystemofaDownToxicityalbumcover.jpg",
+            "release_date": "new Date('September 4, 2001')",
+            "songs_list":["Prison Song", "Deer Dance", "X", "Bounce", "Needles",
+                        "Chop Suey", "Forest", "Jet Pilot"],
+            "genres":"Heavy Metal"
+            
+        },
+        {
+            "band_name":"System Of Down",
+            "album_name":"System Of Down",
+            "album_cover":"https://upload.wikimedia.org/wikipedia/en/b/bc/System_of_a_down.jpg",
+            "release_date": "new Date('June 30, 1998')",
+            "songs_list":["Suite-Pee", "Sugars", "Spiders", "Soil", "Know",
+                        "Suggestions", "DDevil", "War?"],
+            "genres":"Heavy Metal"
+            
+        },
+        {
+            "band_name":"System Of Down",
+            "album_name":"Mezmerize",
+            "album_cover":"https://upload.wikimedia.org/wikipedia/en/0/02/Mezmerize-LP.jpg",
+            "release_date": "new Date('May 17, 2005')",
+            "songs_list":["Soldier-Side", "Revenga", "Radio", "Violent Pornography", "B.Y.O.B",
+                        "Cigaro", "The Cocaine Makes Me Feel Like", "Question!"],
+            "genres":"Heavy Metal"
+            
+        }
+    ]
+}
