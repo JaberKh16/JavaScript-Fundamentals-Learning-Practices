@@ -12,8 +12,8 @@ const parseAlbumFile = function(){
             }
             return responseData.text();
         }).then(data=>{
-            console.log(data);
-            return data.toString();
+            console.log(JSON.stringify(data));
+            // return JSON.stringify(data);
         })
         .catch(error=>{
             console.log(error.message);
@@ -22,11 +22,7 @@ const parseAlbumFile = function(){
     return promise;
 }
 
-const jsonData = () =>{
-    return parseAlbumFile();
-    // console.log(data);
-    // return data;
-} 
-console.log(jsonData());
-const albumList = JSON.stringify(jsonData);
-// console.log(albumList);
+const jsonData = parseAlbumFile();
+console.log(jsonData);
+const albumList = JSON.parse(jsonData);
+console.log(albumList);
