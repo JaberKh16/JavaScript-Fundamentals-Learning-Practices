@@ -88,3 +88,6 @@ hr{
     top:25.3%;
     padding:10px 5px;
 }
+.songs-list{
+    list-style:square;
+}

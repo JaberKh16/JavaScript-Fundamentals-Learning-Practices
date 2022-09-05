@@ -1,6 +1,16 @@
 /*
-    Array Method: array.find(callbackfunction)
+    Array Method: array.find(callbackFunction)
     ==========================================
+    array.find(callbackFunction) takes the "callbackFunction" which iterates
+    like filter() helper method which then iterating over individual items
+    through "callbackFunction" over some condition and just the difference is
+    that it only iterates for the first match of the condition and leaving
+    the rest match cases.
+    
+    Syntax-    
+            array.find(function(obj){
+                return obj.property === value;
+            })
 */
 
 // declaring 'use strict' statement

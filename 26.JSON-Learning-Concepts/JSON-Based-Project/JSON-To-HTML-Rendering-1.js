@@ -1,6 +1,28 @@
 // defining the 'use strict' statement
 'use strict';
 
+function parsingInvidualAlbumSongs(songList){
+    console.log(songList);
+    let generatedDiv = "";
+    // for(let i = 0; i<song.length; i++){
+    //     // console.log(song[i]);
+    //     generatedDiv += `<ul><li>${song[i]}</li></ul>`        
+
+    // }
+    songList.forEach((element, index) => {
+        console.log(element, index);
+        if(index === 7){
+            generatedDiv = `<span><div><ul><li>${element}</li></ul></div></span>`;
+            
+        }
+    });
+
+    // const generatedDiv = `
+    // <div> ${} </div>`;
+    return generatedDiv;
+}
+
+
 function renderingHTMLTemplate(albums){
     console.log(albums);
     let repeatedBandName = 0; // to store the band name if repeated
@@ -39,12 +61,14 @@ function renderingHTMLTemplate(albums){
             </div>`;
         }).join('')}</div>
         <span class="song-list__div"> ${albums['album_list'].map(function(album){
-                const songsList = album.songs_list.map(function(song){
-                    return `<ul>
-                                <li> ${song} </li>
-                            </ul>`;
-            }).join('');
-            return songsList;
+                const songsList = album.songs_list;
+                    // console.log(song.length)
+                    // return parsingInvidualAlbumSongs(song);
+                    // return `<div><ul>
+                    //             <li class="songs-list"> ${} </li>
+                    //         </ul></div>`;
+                    // return song;
+                return parsingInvidualAlbumSongs(songsList);
         }).join('')} </span>
     </div>`;
     
