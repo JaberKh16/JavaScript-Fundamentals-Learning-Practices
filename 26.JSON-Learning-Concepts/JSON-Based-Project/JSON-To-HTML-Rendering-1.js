@@ -12,6 +12,7 @@ function renderingHTMLTemplate(albums){
         const bandName = album.band_name;
         
         // console.log(typeof bandName);
+        // checking though having a single band info
         if(bandName === 'System Of Down'){
             repeatedBandName++;
             if(repeatedBandName == 1){
