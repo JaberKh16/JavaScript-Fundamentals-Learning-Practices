@@ -11,9 +11,15 @@ const parseAlbumFile = function(){
                 reject(responseData.status);
             }
             return responseData.text();
-        }).then(data=>{
-            console.log(JSON.stringify(data));
-            // return JSON.stringify(data);
+            
+        }).then(data =>{
+            console.log(data);
+            dataArray = JSON.parse(data);
+            dataArray["album_list"].forEach(album =>{
+                console.log(album)
+            });
+            return dataArray;
+                
         })
         .catch(error=>{
             console.log(error.message);
@@ -22,7 +28,8 @@ const parseAlbumFile = function(){
     return promise;
 }
 
+
 const jsonData = parseAlbumFile();
-console.log(jsonData);
-const albumList = JSON.parse(jsonData);
-console.log(albumList);
+// console.log(jsonData);
+// const albumList = parsingJSONToObject(jsonData);
+// console.log(albumList);
