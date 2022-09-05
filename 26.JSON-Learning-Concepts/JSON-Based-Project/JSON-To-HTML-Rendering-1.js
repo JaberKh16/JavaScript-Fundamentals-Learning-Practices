@@ -23,7 +23,15 @@ function renderingHTMLTemplate(albums){
             return null;
         }
     }).join('')} Listed
-    (${albums['album_list'].length}) Albums</h1>`;
+    (${albums['album_list'].length}) Albums</h1>
+    <div class="albums-div"> 
+        <div class="album"> ${albums['album_list'].map(function(album){
+            return `<div class="image-div"> 
+                <img class="img-size" src="${album.album_cover}" alt="Unavailable">
+                <h2 class="album-ttile"><strong> ${album.album_name} </strong></h2>
+            </div>`;
+        }).join('')}</div>
+    </div>`;
 }
 
 

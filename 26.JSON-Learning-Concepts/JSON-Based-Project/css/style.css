@@ -9,4 +9,38 @@
     padding: 20px 50px;
     margin: 20px 20px;
     text-align: center;
+    width: 90%;
 }
+
+.albums-div{
+    background-color: #646363;
+    margin: 30px 60px;
+    border: 2px solid #646363;
+    width: 80%;
+}
+
+.album{
+    width: 80%;
+    border: 2px solid #646363;
+    margin: 20px 50px;
+}
+
+.image-div{
+    border: 2px solid #fff;
+    margin: 10px 20px;
+    width: 40%;
+}
+
+.img-size{
+    width: 345px;
+    height: 250px;
+}
+
+.album-ttile{
+    background-color:#fff;
+    color:#505064;
+    text-align: center;
+    font-weight: bold;
+    font-size:25px;
+}
+
