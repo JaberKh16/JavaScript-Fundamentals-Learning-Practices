@@ -22,18 +22,24 @@
 .album{
     width: 80%;
     border: 2px solid #646363;
-    margin: 20px 50px;
+    margin: 20px 10px;
 }
 
 .image-div{
     border: 2px solid #fff;
     margin: 10px 20px;
-    width: 40%;
+    width: 55%;
+    position: relative;
+    top: 20%;
+    left:0%;
 }
 
 .img-size{
-    width: 345px;
-    height: 250px;
+    width: 43%;
+    height: 280px;
+    padding: 5px 6px;
+    /* margin-bottom:20px; */
+    outline: 2px solid #857f7f;
 }
 
 .album-ttile{
@@ -42,5 +48,34 @@
     text-align: center;
     font-weight: bold;
     font-size:25px;
+    /* margin-top:20%; */
 }
 
+.album-misc__info{
+    background-color:#fff;
+    color:#505064;
+    padding:2rem 2em;
+    width:40%;
+    height:70%;
+    /* font-weight:bold; */
+    /* font-size: 20px; */
+    position: absolute;
+    text-align: left;
+    top: 1%;
+    /* right:3%; */
+    left:46%;
+}
+
+.album-genre{
+    margin:0px 20%;
+    padding:4px;
+}
+
+hr{
+    margin: 20% auto;
+    width:100%;
+}
+
+.album-releasedate{
+    /* margin: 10% auto; */
+}

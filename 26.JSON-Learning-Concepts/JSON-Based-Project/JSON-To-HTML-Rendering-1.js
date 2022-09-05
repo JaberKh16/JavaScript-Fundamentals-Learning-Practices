@@ -28,7 +28,14 @@ function renderingHTMLTemplate(albums){
         <div class="album"> ${albums['album_list'].map(function(album){
             return `<div class="image-div"> 
                 <img class="img-size" src="${album.album_cover}" alt="Unavailable">
-                <h2 class="album-ttile"><strong> ${album.album_name} </strong></h2>
+                <span class="album-misc__info">
+                    <hr>
+                    <span class="album-genres">Genres: ${album.genres}</span>
+                    <br><br>
+                    <span class="album-releasedate">Release Date: ${eval("("+album.release_date+")").getMonth()}</span>
+                    <hr>
+                </span>
+                <h2 class="album-ttile"><strong> Album Name: ${album.album_name} </strong></h2>
             </div>`;
         }).join('')}</div>
     </div>`;
