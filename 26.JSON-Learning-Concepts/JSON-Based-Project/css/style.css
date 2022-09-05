@@ -15,20 +15,20 @@
 .albums-div{
     background-color: #646363;
     margin: 30px 60px;
-    border: 2px solid #646363;
-    width: 80%;
+    border: 2px solid #b91c1c;
+    /* width: 90%; */
 }
 
 .album{
-    width: 80%;
-    border: 2px solid #646363;
-    margin: 20px 10px;
+    width: 40%;
+    border: 2px solid #9c3232;
+    margin: 20px 5px;
 }
 
 .image-div{
     border: 2px solid #fff;
     margin: 10px 20px;
-    width: 55%;
+    width: 95%;
     position: relative;
     top: 20%;
     left:0%;
@@ -78,4 +78,13 @@ hr{
 
 .album-releasedate{
     /* margin: 10% auto; */
+}
+
+.song-list__div{
+    width:52%;
+    background-color:#e3e3e4;
+    position:absolute;
+    right:4.7%;
+    top:25.3%;
+    padding:10px 5px;
 }

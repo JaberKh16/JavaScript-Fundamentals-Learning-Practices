@@ -38,7 +38,16 @@ function renderingHTMLTemplate(albums){
                 <h2 class="album-ttile"><strong> Album Name: ${album.album_name} </strong></h2>
             </div>`;
         }).join('')}</div>
+        <span class="song-list__div"> ${albums['album_list'].map(function(album){
+                const songsList = album.songs_list.map(function(song){
+                    return `<ul>
+                                <li> ${song} </li>
+                            </ul>`;
+            }).join('');
+            return songsList;
+        }).join('')} </span>
     </div>`;
+    
 }
 
 
