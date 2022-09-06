@@ -43,21 +43,21 @@ console.log(personName, personAge, personOtherInfo);
 
 // destructuring object & nested object & combine object into single object
 let userInfo = {
-    UserName: 'Mike',
-    UserFriend: ["John", "Paul", "Jimmy"],
-    UserLocation: {
+    userName: 'Mike',
+    userFriend: ["John", "Paul", "Jimmy"],
+    userLocation: {
         region:"England",
         country:"United Kingdom"
     },
-    UserAboutMe: {
-        status: "Single",
-        pet: "Dog",
+    userAboutMe: {
+        maritialStatus: "Single",
+        petName: "Dog",
     }
 }
 
-const { userName, userFriend, userLocation, userAboutMe:{status, pet} } = userInfo;
-console.log(userName); // output: "Mike"
-console.log(userFriend);  // output: [ 'John', 'Paul', 'Jimmy' ]
-console.log(userLocation); // output: { region: 'England', country: 'United Kingdom' }
-console.log(UserAboutMe); // output: "Single"
-console.log(UserAboutMe.pet); // output: "Dog"
+const { userName, userFriend, userLocation, userAboutMe: {maritialStatus, petName}} = userInfo;
+console.log(userName); // returns "Mike"
+console.log(userFriend);  // returns [ 'John', 'Paul', 'Jimmy' ]
+console.log(userLocation); // returns { region: 'England', country: 'United Kingdom' }
+console.log(maritialStatus); // returns "Single"
+console.log(petName); // returns "Dog"
