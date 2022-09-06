@@ -2,12 +2,16 @@
     JavaScript ES6 Features- Arrow Function
     =======================================
     Arrow Function is ES6 Feature which has its surrounding scope means
-    have the block scope wherever it is being defined.
+    have the Block Scope wherever it is being defined.
     
     Arrow function can be defined in following way-
         1) () => {} ;// if not having any parameter
         2) (p1, p2) => {return p1 + p2 } ;// if having some parameters
         
+    In case of Regular Functions(such as Anonymous and Named Functions)
+    insidal 'this' keyword refers to the 'window' object because having
+    the Global Scope.
+    
 */
 
 // Example-1- ES5 way of dealing with function
