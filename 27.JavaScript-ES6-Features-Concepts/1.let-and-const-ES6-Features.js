@@ -59,7 +59,7 @@ console.log(someVar);
 var someVar = 65;
 console.log(someVar);
 
-// Example-3- 'let' and 'const' declaration has Block Scope
+// Example-1- 'let' and 'const' declaration has Block Scope
 // ES6 way of declaring variables
 let storeName = "Walmart";
 console.log(storeName);
@@ -77,8 +77,47 @@ function ES5VaraiblesScope(){
 }
 console.log(playName); // invalid throws ReferenceError: playName is not defined
 
-// Example-5- Proving 'let' and 'const' has Block Scope
+// Example-4- Proving 'let' and 'const' has Block Scope
 if(true){
     let playName = 'Footbale';
 }
 console.log(playName); // invalid throws ReferenceError: playName is not defined
+
+// Example-5- 'var' having Global Scope
+for(var i=0; i<5; i++){
+    console.log(i); // returns 0 to 4
+}
+console.log(i); // returns 5 because of having Global Scope and its last value is 5
+
+
+// Example-5- 'let' and 'const' having Block Scope
+for(let j=0; j<5; j++){
+    console.log(j);
+}
+console.log(j); // returns ReferenceError: 'j' is not defined
+
+for(const k=0; k<5; k++){
+    console.log(k); // returns 0 then throws error
+}
+console.log(j); // returns TypeError: Assignment to constant variable
+
+
+// Example-6. 'var' with Hoisting
+console.log(number1); // returns 'undefined' because of Hoisting
+var number1 = 10;
+
+
+// Example-6. 'let' and 'const' with Hoisting
+console.log(number2); // throws ReferenceError: number is not defined
+let number2 = 10;
+
+
+// Example-6. 'let' and 'var' if not value initialized
+let number3;
+var number4;
+console.log(number3); // returns 'undefined'
+console.log(number4); // returns 'undefined' 
+
+// Example-6. 'const' with Hoisting
+const number5;
+console.log(number5); // throws SyntaxError: Missing initializer in const declaration
