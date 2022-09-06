@@ -27,7 +27,7 @@ const [banana, apple, ...otherFruits] = fruits;
 console.log(banana, apple, otherFruits);
 
 // destructuring objects properties
-const personInfo = {
+let personInfo = {
     name: "Jonathan Smith",
     age: 34, 
     gender: 'Male',
@@ -37,3 +37,24 @@ const personInfo = {
 
 const {personName, personAge, ...personOtherInfo} = personInfo;
 console.log(personInfo.personName, personInfo.personAge, personOtherInfo);
+
+// destructuring object & nested object & combine object into single object
+let userInfo = {
+    name: 'Mike',
+    friend: ["John", "Paul", "Jimmy"],
+    location: {
+        region:"England",
+        country:"United Kingdom"
+    },
+    aboutMe: {
+        status: "Single",
+        pet: "Dog",
+    }
+}
+
+const { userName, userFriend, userLocation } = userInfo;
+console.log(userName); // output: "Mike"
+console.log(userFriend);  // output: [ 'John', 'Paul', 'Jimmy' ]
+console.log(userLocation); // output: { region: 'England', country: 'United Kingdom' }
+// console.log(status); // output: "Single"
+// console.log(pet); // output: "Dog"
