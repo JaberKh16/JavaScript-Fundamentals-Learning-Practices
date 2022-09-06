@@ -47,3 +47,17 @@ const income = weeklyEarnings.reduce((previousValue, currentValue)=>{
 }, initialEarning);
 
 console.log(income);
+
+
+// Example-3
+const firstNames = ['Chandler', 'Joey', 'Rachel', 'Ross', 'Monica', 'Pheobe']
+const lastNames = ['Bing', 'Tribianni', 'Green', 'Geller', 'Geller', 'Buffay'];
+const initialArray = [];
+
+const fullNames = firstNames.reduce((previous, firstNames, indexValue)=>{
+    // now the previous denoted the initiaArray means previous = [] 
+    previous.push(firstNames + ' ' + lastNames[indexValue]);
+    return previous;
+}, [])
+
+console.log(fullNames);
