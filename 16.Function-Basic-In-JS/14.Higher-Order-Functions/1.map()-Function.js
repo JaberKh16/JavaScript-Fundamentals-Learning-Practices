@@ -28,7 +28,7 @@ const evenNumbers = numbers.map((number)=>{
     if(number % 2 === 0){
         return number * 2;
     }
-    return;
+    return "";
 });
 
 console.log(evenNumbers);
