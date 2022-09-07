@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock Project</title>
     <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
         div{
             border: 2px solid #ccc;
             width:30%;
-            background-color: rgb(140, 167, 168);
+            background-color: #9fc9ca;
+            margin:10rem 29rem;
+        }
+        div > h1{
+            text-align: center;
+            color:#060633;
+            text-transform: uppercase;
+            text-decoration: underline;
+            padding:2rem, 2rem;
         }
         h2{
             color:blueviolet;
@@ -20,6 +33,7 @@
 </head>
 <body>
     <div>
+        <h1>Digital Clock</h1>
         <h2 id="clock-value"></h2>
     </div>
     <script src="./Digital-Clock-Project.js"></script>
