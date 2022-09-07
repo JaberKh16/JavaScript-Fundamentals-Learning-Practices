@@ -81,6 +81,8 @@ const mapData = new Map([
     ['gender', 'male'],
     ['language', ['C++', 'JavaScript', 'Python']],
     ['known_framework', ['NodeJS', 'DJango', 'ReactJS']],
+    ["func", function(){return new Date('1994-10-14')}],
+    ["object", {salary:50000, petName:'Muez', experienced:'3years'}],
 ])
 
 // checks its size
@@ -104,3 +106,14 @@ console.log(allKeys);
 // getting all the values
 const allValues = mapData.values();
 console.log(allValues);
+
+// to delete particular key from the Map
+const deleteFunctionKey = mapData.delete('func');
+console.log(deleteFunctionKey);
+console.log(mapData); // deletion happens on actual Map
+
+
+// to clear out the Map
+const clearedMap = mapData.clear();
+console.log(clearedMap); // returns nothing means 'undefined'
+console.log(mapData)
