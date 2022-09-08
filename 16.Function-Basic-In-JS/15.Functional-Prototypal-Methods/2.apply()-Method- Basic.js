@@ -37,8 +37,7 @@ try{
     // before invoking this function through call()
     const gettingPersonInfo1 = function (companyName, division){
         console.log(this); // now 'this' has the scope of global
-        console.log(`${this.fullName()} who age is ${this.age} works at 
-        ${companyName} in ${division} division.`);
+        console.log(`${this.fullName()} who age is ${this.age} works at ${companyName} in ${division} division.`);
     }
     gettingPersonInfo1(); // hits an TypeError: this.fullName() is not a function
 }catch(error){
@@ -64,5 +63,5 @@ const gettingProfessionInfo = function (callback){
     console.log(`He is a ${this.designation} have experience of ${this.experiencedYear} years as a ${this.profession}.`);
 }
 
-// passed a function as an array
+// passed 'getttingPersonInfo' function as an array
 gettingProfessionInfo.apply(personProfessionInfo, [gettingPersonInfo]);

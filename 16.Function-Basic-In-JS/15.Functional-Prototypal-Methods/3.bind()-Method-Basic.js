@@ -66,16 +66,18 @@ try{
 const gettingPersonInfo = function (companyName, division){
     console.log(this); // now 'this' has the scope of 'personInfo' object
     console.log(`${this.fullName()} who age is ${this.age} works at ${companyName} in ${division} division.`);
-const personGeneralInfo = gettingPersonInfo.bind(personInfo, ['Enosis Solution'], 'IT');
-personGeneralInfo();
+}
 
-// // another example of bind()
-// const gettingProfessionInfo = function (callback){
-//     // using the callback function concept here invoking with apply()-
-//     callback.apply(personInfo, ['EycleTech', 'IT']);
-//     console.log(`He is a ${this.designation} have experience of ${this.experiencedYear} years as a ${this.profession}.`);
-// };
+const gettingPersonalInfo = gettingPersonInfo.bind(personInfo, ['Enosis Solution'], 'IT');
+gettingPersonalInfo();
 
-// // passed a function as an argument
-// const gettingPersonProfessionInfo =  gettingProfessionInfo.bind(personProfessionInfo, gettingPersonInfo);
-// gettingPersonProfessionInfo();
+// another example of bind()
+const gettingProfessionInfo = function (callback){
+    // using the callback function concept here invoking with apply()
+    callback.apply(personInfo, ['EycleTech', 'IT']);
+    console.log(`He is a ${this.designation} have experience of ${this.experiencedYear} years as a ${this.profession}.`);
+}
+
+// passed 'getttingPersonInfo' function as an argument
+const gettingPersonProfessionalInfo = gettingProfessionInfo.bind(personProfessionInfo, gettingPersonInfo);
+gettingPersonProfessionalInfo();
