@@ -16,9 +16,12 @@
 
     HTML Collection Concept
     -----------------------
-    1) similar like array that has index based accesing technique.
-    2) index value starts from 0.
-    3) has property 'length'.
+    1) HTMLCollection is a collection of document elements.
+    2) similar like array that has index based accesing technique.
+    3) index value starts from 0.
+    4) has property 'length'.
+    5) HTMLCollection items can be accessed by their name, id or index number.
+    6) always a live collection- means supports live inclusion of element.
 
     Converting HTMLCollection Into An Array Object
     ----------------------------------------------
@@ -32,8 +35,14 @@
 'use strict';
 
 // Gettting The Element 'h2' Through DOM Method
-let movieTitle = document.getElementsByClassName('movie-section');
-console.log(movieTitle);
+let movieSection = document.getElementsByClassName('movie-section');
+console.log(movieSection);
 
 // Changing The Inner Text Of That Title
-movieTitle.innerText = "Marvel Phase-4 Recent Movie"; // innerText="" will chnage the inner content of the content
+movieSection.innerText = "Marvel Phase-4 Recent Movie"; // innerText="" will chnage the inner content of the content
+
+
+// Loop through the HTMLCollection
+Array.from(movieSection).forEach((item)=>{
+    console.log(item); // returns the <div> because having that element only
+})

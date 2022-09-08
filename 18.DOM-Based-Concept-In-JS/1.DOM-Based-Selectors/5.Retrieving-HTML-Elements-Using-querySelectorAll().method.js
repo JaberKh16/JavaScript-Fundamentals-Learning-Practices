@@ -10,10 +10,13 @@
     
     NodeList Concept
     ----------------
-    1)  similar like HTMLCollection that has index based accesing technique.
-    2)  index value starts from 0.
-    3)  has property 'length' .
-    4)  difference with "HTMLCollection" is that it allows us to use Array.forEach()
+    1)  NodeList is a collection of document nodes(like- element nodes, attributes nodes, text nodes etc)
+    2)  similar like HTMLCollection that has index based accesing technique.
+    3)  index value starts from 0.
+    4)  has property 'length' .
+    5)  NodeList items can only be accessed by their index number.
+    6)  most often a static collection- means doens't support live inclusion of element. 
+    7)  difference with "HTMLCollection" is that it allows us to use Array.forEach()
         method directly without even transforming it to an array. Although its not
         an array so can't use array based method with it, without transforming it
         to an array.
