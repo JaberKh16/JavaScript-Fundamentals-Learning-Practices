@@ -50,10 +50,11 @@ buttonElement.addEventListener('click', function(event){
     event.preventDefault(); // solve the blinking issue
     inputElement.setAttribute('type', 'submit');
     inputElement.setAttribute('value', inputElement.value);
-    inputElement.setAttribute('style', "background-color: #ff3432;");
+    inputElement.setAttribute('style', "background-color: #ffc432");
 
+    // if has the specified attribute then delete that attribute
     if(inputElement.hasAttribute('style')){
-        console.log(inputElement.getAttribute('style'));
-        inputElement.style.cssText =  inputElement.getAttribute('style').toString();
+        const delettedAttr = inputElement.removeAttribute('style');
+        console.log(delettedAttr);
     }
 });
