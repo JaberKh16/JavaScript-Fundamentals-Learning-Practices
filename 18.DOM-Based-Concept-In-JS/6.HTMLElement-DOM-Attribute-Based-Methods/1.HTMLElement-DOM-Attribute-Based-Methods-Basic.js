@@ -56,10 +56,10 @@ buttonElement.addEventListener('click', function(event){
 
     // first setting some attributes for 'inputElement' input field 
     inputElement.setAttribute('type', 'submit');
-    inputElement.setAttribute('value', input.value);
+    inputElement.setAttribute('value', inputElement.value);
 
     // checking if input field has the attribute or not and then getting that attribute
-    if(inputElement.hasAttribute(value)){
-        console.log(inputElement.getAttribute(value));
+    if(inputElement.hasAttribute('type')){
+        console.log(inputElement.getAttribute('type'));
     }
 })

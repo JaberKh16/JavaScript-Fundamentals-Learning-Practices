@@ -28,9 +28,11 @@ const listItems = document.querySelector('ul');
 
 // console.log(buttonElement);
 
-// getting the last element
+// selecting the last element which is <li> for 'third note' which will be deleted 
 const lastItem = listItems.lastElementChild;
 console.log(lastItem);
 
-const removedItem = lastItem.removeChild;
-console.log(removedItem);
+// to remove a child need to first get its parent element then remove that child element
+const removedItem = lastItem.parentElement.removeChild(lastItem);
+console.log(removedItem); // returns the removed child data
+console.log(listItems); // finally seeing the avaialble lists

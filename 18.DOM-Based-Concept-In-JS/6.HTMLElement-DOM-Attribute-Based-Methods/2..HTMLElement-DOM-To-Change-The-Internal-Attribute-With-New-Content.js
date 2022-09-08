@@ -48,6 +48,12 @@ buttonElement.addEventListener('click', function(event){
     //console.log('Clicked on the submit buttion.'); // generally, button element has refresh issue means after a click it will refresh the page
                                                    // thus blinkcing of the output can be seen and to resolve that use prevenDefault() method
     event.preventDefault(); // solve the blinking issue
-    // inputElement.setAttribute('type', 'submit');
-    // inputElement.setAttribute('value', input.value);
+    inputElement.setAttribute('type', 'submit');
+    inputElement.setAttribute('value', inputElement.value);
+    inputElement.setAttribute('style', "background-color: #ff3432;");
+
+    if(inputElement.hasAttribute('style')){
+        console.log(inputElement.getAttribute('style'));
+        inputElement.style.cssText =  inputElement.getAttribute('style').toString();
+    }
 });

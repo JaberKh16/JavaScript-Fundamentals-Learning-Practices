@@ -1,9 +1,9 @@
 /*
-    HTML Element Object Based Method- document.removeChild()
+    HTML Element Object Based Method- document.append()
     ==========================================================
-    document.removeChild() is used to remove a HTML Element.
+    document.append() is used to append a HTML Element.
     Syntax-
-        document.removeChild(element);
+        document.append(element);
 
 */
 
