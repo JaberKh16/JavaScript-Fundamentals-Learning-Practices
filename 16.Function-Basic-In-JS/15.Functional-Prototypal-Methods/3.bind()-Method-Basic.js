@@ -52,12 +52,11 @@ try{
     // before invoking this function through call()
     const gettingPersonInfo1 = function (companyName, division){
         console.log(this); // now 'this' has the scope of global
-        console.log(`${this.fullName()} who age is ${this.age} works at 
-        ${companyName} in ${division} division.`);
+        console.log(`${this.fullName()} who age is ${this.age} works at ${companyName} in ${division} division.`);
     }
     gettingPersonInfo1(); // hits an TypeError: this.fullName() is not a function
 }catch(error){
-    console.log(error.toString());
+    console.log(error);
 }
 
 
@@ -70,13 +69,13 @@ const gettingPersonInfo = function (companyName, division){
 const personGeneralInfo = gettingPersonInfo.bind(personInfo, ['Enosis Solution'], 'IT');
 personGeneralInfo();
 
-// another example of apply()
-const gettingProfessionInfo = function (callback){
-    // using the callback function concept here invoking with apply()-
-    callback.apply(personInfo, ['EycleTech', 'IT']);
-    console.log(`He is a ${this.designation} have experience of ${this.experiencedYear} years as a ${this.profession}.`);
-};
+// // another example of bind()
+// const gettingProfessionInfo = function (callback){
+//     // using the callback function concept here invoking with apply()-
+//     callback.apply(personInfo, ['EycleTech', 'IT']);
+//     console.log(`He is a ${this.designation} have experience of ${this.experiencedYear} years as a ${this.profession}.`);
+// };
 
-// passed a function as an argument
-const gettingPersonProfessionInfo =  gettingProfessionInfo.bind(personProfessionInfo, gettingPersonInfo);
+// // passed a function as an argument
+// const gettingPersonProfessionInfo =  gettingProfessionInfo.bind(personProfessionInfo, gettingPersonInfo);
 // gettingPersonProfessionInfo();
