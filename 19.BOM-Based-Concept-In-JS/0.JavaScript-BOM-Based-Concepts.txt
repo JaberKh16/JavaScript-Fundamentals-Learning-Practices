@@ -1,0 +1,13 @@
+JavaScript BOM Based Concepts
+=============================
+BOM stands for Browser Object Model.
+BOM has many objects one of them is 'window' Object. 'window' Object has some
+methods and properties which can be listed like the following-
+    
+    a) global variables --> "window" object properties
+    b) global functions --> "window" object methods 
+
+"window" Object some properties
+-------------------------------
+1) window.innerHeight --> provides window height in px.
+2) window.innerWidth  --> provides window width in px.
