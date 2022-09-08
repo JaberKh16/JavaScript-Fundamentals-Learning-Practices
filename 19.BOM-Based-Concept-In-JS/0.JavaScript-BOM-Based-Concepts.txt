@@ -11,3 +11,40 @@ methods and properties which can be listed like the following-
 -------------------------------
 1) window.innerHeight --> provides window height in px.
 2) window.innerWidth  --> provides window width in px.
+
+"window" Object some methods
+----------------------------
+1) window.open()        --> to open a new window.
+2) window.close()       --> to close the current window.
+3) window.moveTo()      --> to move the current window.
+1) window.resizeTo()    --> to resize the current window.
+
+
+"window" Based Different objects
+--------------------------------
+a) window.history Object
+b) window.screen Object
+c) window.location Object
+d) window.navigator Object
+
+
+JavaScript Popup Boxes
+----------------------
+Popup Boxes are also a part of BOM "window" object. There are 3 types of boxes which 
+are the following-
+
+    1) window.alert()
+    2) window.confirm()
+    3) window.prompt()
+
+JavaScript Timing Events
+------------------------
+Timing Events are also part of BOM "window" object. There are 4 types of timing events
+which are the following-
+    
+    1) setTimeout(callback, timer)
+    2) setInterval(callback, timer)
+    3) clearTimeout(timervariable)
+    4) clearInterval(timervariable)
+
+    
