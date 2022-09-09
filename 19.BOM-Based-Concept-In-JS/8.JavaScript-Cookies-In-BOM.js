@@ -57,10 +57,52 @@ console.log(readCookies);
 document.cookie = "Client-Name=; expires=new Date('September 7, 2022, 10:00:00'); patha=./";
 
 
+
+// setting cookie through function
 function setCookie(cookieName, cookieValue, expiryDate){
     const day = new Date(); // set up a datetime
-    day.setTime(day.getTime() + expiryDate *24*60*60*1000); // to get hours info
-    let expiresAfter = "expires=" + day.toUTCString(); //
+    day.setTime(day.getTime() + expiryDate*24*60*60*1000); // to get hours info
+    let expiresAfter = "expires=" + day.toUTCString(); // converting the date to UTC time
+    console.log(expiresAfter);
+    document.cookie = `${cookieName}=${cookieValue}; ${expiresAfter}; path=./;`;
 }
 
-setCookie('UserName', 'Jogn', 'September 11, 2022');
+// setCookie('UserName', 'John', 'September 11, 2022');
+
+
+// getting cookie through function
+function getCookie(cookieName){
+    let cookieArray = document.cookie.split(';');
+    console.log(cookieArray);
+    let userName = cookieName + '=';
+    console.log(userName);
+    let decodedCookie = decodeURIComponent(document.cookie);
+    console.log(decodedCookie);
+    
+    for(let i = 0; i<cookieArray.length; i++){
+        let chars = cookieArray[i];
+        console.log(chars);
+        while(chars.charAt(0)=== ''){
+            chars = chars.substring(1);
+        }
+        if(chars.indexOf(userName) === 0){
+            return chars.substring(userName.length, chars.length);
+        }
+    }
+    return "";
+}
+// getCookie('UserName');
+
+// checking for cookie
+function checkCookie(){
+    let userName = getCookie('UserName');
+    if(userName !== ""){
+        alert( `Welcome again ${userName}`);
+    }
+    else{
+        userName = prompt('Please enter your name: ', "");
+        if(userName !== "" && userName !==null){
+            setCookie('userName', userName, 365);
+        }
+    }
+}
