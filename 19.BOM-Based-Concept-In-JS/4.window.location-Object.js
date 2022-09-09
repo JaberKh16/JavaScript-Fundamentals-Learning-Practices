@@ -17,7 +17,10 @@
                                 in the url then returns the default port like 80(http) or 443(https).
                                 event url using the 'file' protocol the returns value differs from
                                 browser to browser.
-    7) location.hash        --> it sets or returns the anchor part of a URL, including the 
+    7) location.search      --> returns the querystring part of a url including the question(?)
+                                mark as a string. this property is also used to set the querystring
+                                through parameter passisng.
+    8) location.hash        --> it sets or returns the anchor part of a URL, including the 
                                 hash sign (#) as a string. there is a one thing to note when
                                 setting the anchor part don't include the hash (#) sign. to
                                 set the anchor use the following-  
@@ -56,8 +59,11 @@ console.log(`window.location.hostname : ${windowLocationObj.hostname}`);
 console.log(`window.location.pathname : ${windowLocationObj.pathname}`);
 console.log(`window.location.protocol : ${windowLocationObj.protocol}`);
 console.log(`window.location.port : ${windowLocationObj.port}`);
+console.log(`window.location.origin : ${windowLocationObj.origin}`);
+console.log(`window.location.search : ${windowLocationObj.search}`);
+console.log(`window.location.hash : ${windowLocationObj.hash}`);
 
 
 
 // working with some method of window.location Object
-console.log(`window.location.replace() : ${windowLocationObj.replace('https://www.youtube.com')}`);
+// console.log(`window.location.replace() : ${windowLocationObj.replace('https://www.youtube.com')}`);
