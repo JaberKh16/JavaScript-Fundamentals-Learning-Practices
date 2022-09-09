@@ -1,6 +1,7 @@
 JavaScript BOM Based Concepts
 =============================
 BOM stands for Browser Object Model.
+BOM provides different modern techniques or tools to perform browser work suitable and optimized.
 BOM has many objects one of them is 'window' Object. 'window' Object has some
 methods and properties which can be listed like the following-
     
@@ -47,4 +48,5 @@ which are the following-
     3) clearTimeout(timervariable)
     4) clearInterval(timervariable)
 
-    
+JavaScript Cookies
+------------------
