@@ -24,9 +24,9 @@ alertPopup(windowObj);
 function confirmPopup(windowObj){
     var result = windowObj.confirm('Please consider your opinion');
     if(result === true){
-        console.log(`Client chose 'yes' opionon`);
+        console.log(`Client chose 'Ok' opionon`);
     }else{
-        console.log(`Client chose 'no' opionon`);
+        console.log(`Client chose 'Cancel' opionon`);
     }
 }
 
