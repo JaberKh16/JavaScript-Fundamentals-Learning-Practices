@@ -21,6 +21,8 @@ methods and properties which can be listed like the following-
 4) window.resizeTo()    --> to resize the current window.
 
 
+Others BOM Based Objects Accessed Through "window" Object
+
 "window" Based Different objects
 --------------------------------
 a) window.history Object
