@@ -60,10 +60,32 @@ console.log(`window.location.pathname : ${windowLocationObj.pathname}`);
 console.log(`window.location.protocol : ${windowLocationObj.protocol}`);
 console.log(`window.location.port : ${windowLocationObj.port}`);
 console.log(`window.location.origin : ${windowLocationObj.origin}`);
-console.log(`window.location.search : ${windowLocationObj.search}`);
-console.log(`window.location.hash : ${windowLocationObj.hash}`);
+// console.log(`window.location.search : ${windowLocationObj.search}`);
+// console.log(`window.location.hash : ${windowLocationObj.hash}`);
 
+
+function settingHashValue(windowLocationObj){
+    var urlLink = document.getElementById('url-part');
+    urlLink.hash = 'Failure(Song)'; // setting the anchorname
+    return urlLink;
+}
+
+
+function gettingHashValue(windowLocationObj){
+    settingHashValue(windowLocationObj); // calling the function to set the hash value before getting it
+    var urlLink = document.getElementById('url-part');
+    document.getElementById('write-hash').innerText = `Anchor portion of the url is: ${urlLink.hash}`; 
+}
+gettingHashValue(windowLocationObj);
+
+function gettingSearchValue(windowLocationObj){
+    var urlLink = document.getElementById('url-part');
+    document.getElementById('write-search').innerText = `Querystring portion of the url is: ${urlLink.search}`; 
+}
+gettingSearchValue(windowLocationObj);
 
 
 // working with some method of window.location Object
 // console.log(`window.location.replace() : ${windowLocationObj.replace('https://www.youtube.com')}`);
+// console.log(`window.location.reload() : ${windowLocationObj.reload('https://www.youtube.com')}`);
+// console.log(`window.location.assign() : ${windowLocationObj.assign('https://www.youtube.com')}`);
