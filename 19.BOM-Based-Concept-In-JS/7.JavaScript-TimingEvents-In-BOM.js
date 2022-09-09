@@ -11,3 +11,25 @@
 
 */
 
+function settingTimeout(){
+    for(var i=0; i<5; i++){
+        console.log(i);
+    }
+    // console.log(i); // resulted 5 because of the 'window' having the access of variable 'i'
+}
+
+const callingSetTimout = setTimeout(settingTimeout, 1000);
+// if(callingSetTimout){ // if 'callingSetTimout' has some value then clear that
+//     clearTimeout(callingSetTimout);
+// }
+
+function settingInterval(){
+    for(var i=0; i<5; i++){
+        console.log(i);
+    }
+    console.log(i); // resulted 5 because of the 'window' having the access of variable 'i'
+}
+const callingSetInterval =  setInterval(settingInterval, 1000);
+if(callingSetInterval){
+    clearInterval(callingSetInterval);
+};
