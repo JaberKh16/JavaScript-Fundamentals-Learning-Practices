@@ -18,7 +18,7 @@ methods and properties which can be listed like the following-
 1) window.open()        --> to open a new window.
 2) window.close()       --> to close the current window.
 3) window.moveTo()      --> to move the current window.
-1) window.resizeTo()    --> to resize the current window.
+4) window.resizeTo()    --> to resize the current window.
 
 
 "window" Based Different objects
