@@ -60,14 +60,12 @@ function changeTextColor (){
         document.querySelector('h3').style.color = 'green';
     })
 }
-changeTextColor();
+// changeTextColor(); // uncomment the code to see the effect
 
 
-// Jquery Way
-// selecting button element through class selector
-$('.clicked-to-change').click(function(){
+// Jquery Way Less Code
+// selecting button element through id selector
+$('#clicked-to__change').click(function(){
     // selecting the h2 selector
-    $('h3').hover(function(){
-        $(this).css('color', 'green');
-    });
+    $('h3').css('color', 'green');
 });
