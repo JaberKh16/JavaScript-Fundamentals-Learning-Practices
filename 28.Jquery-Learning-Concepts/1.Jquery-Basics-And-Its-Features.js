@@ -36,10 +36,21 @@
     9)  Jquery Siblings
     10) Jquery Filtering
     11) Jquery AJAX
+    12) Jquery APIs
+    13) Jquery UI
 
     How To Work With Jquery
     -----------------------
     There are 2 ways to have Jquery on your syetem and emebed with HTML which are the following-
         1) Downloading the compressed or uncompressed file from Jquery sites(best for production) 
         2) Using Jquery CDN(get from 'Google CDN', 'Microsoft CDN', 'CDNJS', 'jsDelivr CDN')
+    
+    Installing Jquery As A Package
+    ------------------------------
+    Installing of Jquery library can be in following ways-
+        1) using NPM Package Manager    ==> npm install jquery
+        2) using Yarn Package Manager   ==> yarn add jquery
+        3) using Bower Package Manager  ==> bower install jquery
+
+        
 */
