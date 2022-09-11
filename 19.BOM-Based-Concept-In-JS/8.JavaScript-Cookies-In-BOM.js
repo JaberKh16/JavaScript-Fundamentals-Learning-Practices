@@ -95,14 +95,15 @@ function getCookie(cookieName){
 
 // checking for cookie
 function checkCookie(){
-    let userName = getCookie('UserName');
+    let userName = getCookie('userName');
     if(userName !== ""){
         alert( `Welcome again ${userName}`);
     }
     else{
         userName = prompt('Please enter your name: ', "");
         if(userName !== "" && userName !==null){
-            setCookie('userName', userName, 365);
+            setCookie('userName', userName, 2);
         }
     }
 }
+checkCookie();

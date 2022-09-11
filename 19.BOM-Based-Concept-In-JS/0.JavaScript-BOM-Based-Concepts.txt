@@ -52,3 +52,18 @@ which are the following-
 
 JavaScript Cookies
 ------------------
+JavaScript Cookies are nothing but the meta information about the client informations
+saved in web browser.
+Cookies basically are the data stored in small text files on client's computer.
+Advantage Of Cookies
+---------------------
+When a web server has sent a web page to browser because of client request to particular
+web page, after serving the request server generally close the connection thus the server
+forgests everything about the client. Thus 'Cookies' comes into play to set some information
+about the client so that when that client again visits that web page, server gets that client
+user information from the 'Cookie' and that client doesnot have to go through again the
+client-server request/response process thus saves a lot of delaying.
+Cookies Syntax
+--------------
+1) document.cookie = "cookie_name = value";
+2) document.cookie = "cookie_name = value; expires= ; path=/";
