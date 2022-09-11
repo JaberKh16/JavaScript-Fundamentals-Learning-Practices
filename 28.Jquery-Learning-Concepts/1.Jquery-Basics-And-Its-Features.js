@@ -52,5 +52,22 @@
         2) using Yarn Package Manager   ==> yarn add jquery
         3) using Bower Package Manager  ==> bower install jquery
 
-        
 */
+
+// VanilaJS Way 
+function changeTextColor (){
+    document.getElementById('clicked-to__change').addEventListener('click', ()=>{
+        document.querySelector('h3').style.color = 'green';
+    })
+}
+changeTextColor();
+
+
+// Jquery Way
+// selecting button element through class selector
+$('.clicked-to-change').click(function(){
+    // selecting the h2 selector
+    $('h3').hover(function(){
+        $(this).css('color', 'green');
+    });
+});
