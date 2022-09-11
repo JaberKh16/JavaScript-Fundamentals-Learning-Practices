@@ -52,6 +52,22 @@
         2) using Yarn Package Manager   ==> yarn add jquery
         3) using Bower Package Manager  ==> bower install jquery
 
+    Jquery Best Way Of Coding Syntax
+    --------------------------------
+    Jquery can support any line of which is valid in Jquery format. Thus it is a best practice to
+    first load the DOM and then perform changes on the DOM through Jquery, otherwise when the 
+    DOM getts bigger and bigger when loading the whole DOM some functionality can be accessible
+    through a say- On Ecomerce Site a client trying to look for a product but even before the
+    product image loads client get access to that product selected button click which is a 
+    complete disaster. So to avoid this kind of issue format the code as following way-
+        
+        $('document').ready(function(){
+            // selecting the element
+            $('selector).method(function(){
+                // do something on the selected element
+            });
+        });
+
 */
 
 // VanilaJS Way 
