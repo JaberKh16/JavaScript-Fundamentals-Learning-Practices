@@ -63,8 +63,19 @@
 
 // loading the whole document 
 $('document').ready(function(){
+    // working with button 
     $('#button-clicked').click(function(){
         $(this).text('Changing the color'); // changing its inner text color through text() function
         $('.content').css('color', 'green'); // changing the color of the header content
     });
+
+    // working with list items
+    $('ul .list-item').hover(function(){
+        $('li:first').css('color', 'blue');     // selecting fast element from the list
+        $('li:last').css('color', 'orange');    // selecting last element from the list
+        $('li:even').css('color', 'purple');    // selecting list elements having an even index
+        $('li:eq(4)').css('color', 'red');      // selecting list element  with an index value equals to 4 thus selected 5 item
+        $('li:gt(5)').css('color', '#44f495');  // selecting list elements with an index value greater then 5
+    })
+    
 })
