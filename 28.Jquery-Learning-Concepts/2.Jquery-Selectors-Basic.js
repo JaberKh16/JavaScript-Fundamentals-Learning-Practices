@@ -30,13 +30,21 @@
 
     Form Based Selectors
     ---------------------
-    1) $(':input')         --> selected all input elements.
-    2) $(':text')         --> selected all input elements with type='text'
-    3) $(':password')         --> selected all input elements with type='password'
-    4) $(':radio')         --> selected all input elements with type='radio'
-    4) $(':checkbox')         --> selected all input elements with type='checkbox'
-    4) $(':submit')         --> selected all input elements with type='submit'
-    4) $(':reset')         --> selected all input elements with type='reset'
+    1) $(':input')          --> select all input elements.
+    2) $(':text')           --> select all input elements with type='text'
+    3) $(':password')       --> select all input elements with type='password'
+    4) $(':radio')          --> select all input elements with type='radio'
+    4) $(':checkbox')       --> select all input elements with type='checkbox'
+    4) $(':submit')         --> select all input elements with type='submit'
+    4) $(':reset')          --> select all input elements with type='reset'
+    4) $(':file')          --> select all input elements with type='file'
+    4) $(':image')          --> select all input elements with type='image'
+    4) $(':button')          --> select all input elements with type='button'
+    4) $(':enabled')          --> select all input elements which are enabled.
+    4) $(':disabled')          --> select all input elements which are disabled.
+    4) $(':checked')          --> select all input elements which are checked.
+    4) $(':reset')          --> select all input elements which are enabled.
+    4) $(':selected')          --> select all input elements which are selected.
 
     Others Different Selectors
     --------------------------
@@ -52,3 +60,7 @@
     10) S1, S2, S3          ==> $('th td p')        --> select all elements with matching selectors.
     
 */
+
+$('document').ready(function(){
+    
+})
