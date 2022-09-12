@@ -61,9 +61,10 @@
     
 */
 
+// loading the whole document 
 $('document').ready(function(){
     $('#button-clicked').click(function(){
-        $(this).text('Changing the color');
-        // $('.content').css('color', 'green');
+        $(this).text('Changing the color'); // changing its inner text color through text() function
+        $('.content').css('color', 'green'); // changing the color of the header content
     });
 })
