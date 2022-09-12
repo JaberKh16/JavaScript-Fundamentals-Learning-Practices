@@ -21,27 +21,27 @@
 
 $('document').ready(function(){
     // filter method- first()
-    $('div').click(function(){
-        $('.ul-list1 > li').first().addClass('highlightingListItems');
+    $('.ul-list1').click(function(){
+        $('.list1-item').first().addClass('highlightingListItems');
     });
     // filter method- last()
-    $('div').click(function(){
-        $('.ul-list2 > li').last().addClass('highlightingListItems');
+    $('.ul-list2').click(function(){
+        $('.list2-item').last().addClass('highlightingListItems');
     });
     // filter method- eq()
-    $('div').click(function(){
-        $('.ul-list3 > li').eq(2).addClass('highlightingListItems');
+    $('.ul-list3').click(function(){
+        $('.list3-item').eq(2).addClass('highlightingListItems');
     });
     // filter method- not(paramter)
-    $('div').click(function(){
-        $('.ul-list4 > li').not(':even').addClass('highlightingListItems');
+    $('.ul-list4').click(function(){
+        $('.list4-item').not(':odd').addClass('highlightingListItems');
     });
     // filter method- filter(paramter)
-    $('div').click(function(){
-        $('.ul-list5 > li').filter(':odd').addClass('highlightingListItems');
+    $('.ul-list5').click(function(){
+        $('.list5-item').filter(':odd').addClass('highlightingListItems');
     });
     // filter method- slice(paramter)
-    $('div').click(function(){
-        $('.ul-list6 > li').slice(0, 3).addClass('highlightingListItems');
+    $('.ul-list6').click(function(){
+        $('.list6-item').slice(0, 3).addClass('highlightingListItems');
     });
 });
