@@ -20,20 +20,28 @@
 */
 
 $('document').ready(function(){
+    // filter method- first()
     $('div').click(function(){
         $('.ul-list1 > li').first().addClass('highlightingListItems');
-    })
+    });
+    // filter method- last()
     $('div').click(function(){
         $('.ul-list2 > li').last().addClass('highlightingListItems');
-    })
+    });
+    // filter method- eq()
     $('div').click(function(){
         $('.ul-list3 > li').eq(2).addClass('highlightingListItems');
-    })
+    });
+    // filter method- not(paramter)
     $('div').click(function(){
         $('.ul-list4 > li').not(':even').addClass('highlightingListItems');
-    })
+    });
+    // filter method- filter(paramter)
     $('div').click(function(){
-        $('.ul-list5 > li').not(':even').addClass('highlightingListItems');
-    })
-    
-})
+        $('.ul-list5 > li').filter(':odd').addClass('highlightingListItems');
+    });
+    // filter method- slice(paramter)
+    $('div').click(function(){
+        $('.ul-list6 > li').slice(0, 3).addClass('highlightingListItems');
+    });
+});
