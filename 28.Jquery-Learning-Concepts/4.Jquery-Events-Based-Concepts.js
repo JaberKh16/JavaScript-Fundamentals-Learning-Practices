@@ -3,12 +3,18 @@
     ============================
     Jquery provides some simple methods to work with events basically those methods attaches
     the event handlers(nothing but the function) to do particular task. Those handlers are 
-    being called upon when the selector for that handler being triggered.
+    being called upon when the selector for that handler being triggered. Insied this
+    handlers 'this' refers to the DOM element that initiated the event.
 
+
+    The event handling function can receive an event object. This object can be used to determine 
+    the nature of the event, and to prevent the event’s default behavior.
+    
     Jquery Events Based Method Types
     --------------------------------
     a) Mouse Events Methods
-    b)
+    b) Form Events Methods
+    c) Documents Events Methods
 
     Mouse Events Methods
     --------------------
@@ -23,4 +29,24 @@
     9)  mouseout()      --> fires when the mouse moves out of the html area.
     10) mouseover()     --> fires when the mouse moves over the html area.
 
+    Form Events Methods
+    -------------------
+    1) focus()      --> fires when the element get focus.
+    2) blur()       --> fires when the html element loses focus.
+    3) focusin()    --> fires when the html element is about to receive focus.
+    4) focusout()   --> fires when the element loses focus.
+    5) select()     --> fires when the text is selected.
+    6) change()     --> fires on change.
+    7) submit()     --> fires when a form is submitted.
+    
+    Document Events Methods
+    -----------------------
+    1) load()       --> called when a document is loaded.
+    2) unload()     --> called when documents are unloaded.
+    3) resize()     --> fires when the window is resized.
+    4) ready()      --> occurs when the DOM has been loaded.
+    5) scroll()     --> fires when the window is scrolled.
+    6) error()      --> fires when there is an erro.
+
 */
+
