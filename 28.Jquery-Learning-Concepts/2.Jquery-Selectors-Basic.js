@@ -62,7 +62,8 @@
 */
 
 $('document').ready(function(){
-    $('#button-click').click(function(){
+    $('#button-clicked').click(function(){
         $(this).text('Changing the color');
+        // $('.content').css('color', 'green');
     });
 })
