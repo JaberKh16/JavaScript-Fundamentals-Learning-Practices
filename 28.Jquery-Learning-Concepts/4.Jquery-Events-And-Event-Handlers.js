@@ -23,10 +23,12 @@
             --------------------------
             jQuery allows you to attach an event handler for one or more events to the selected elements 
             using on() method. Internally all of the shorthand methods uses on() method. The on() method 
-            gives you more flexibility in event binding.
-            
+            gives you more flexibility in event binding. This on() method is replacement of 
+            live() and delegate() method.
+
+
             Syntax-
-                    
+
                         on(types, selector, data, fn )
             Paramters-
             1) 'types'      --> one or more space-separated event types and optional namespaces
@@ -48,6 +50,8 @@
 
 */
 
+
+// single element binding example
 $('document').ready(function(){
     // use of on() to attach event handler
     $('.bind-button').on('click', function(){
@@ -59,4 +63,12 @@ $('document').ready(function(){
         $('#content').off('click');
     });
     
+});
+
+
+// multiple element binding example
+$('document').ready(function(){
+    $('.multiple-binding').on('click', ':button', function(eventObj){
+        alert(`${eventObj.target.value} button selected.`);
+    })
 });
