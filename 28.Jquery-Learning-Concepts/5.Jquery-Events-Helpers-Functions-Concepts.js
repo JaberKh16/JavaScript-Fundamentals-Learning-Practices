@@ -52,9 +52,9 @@
 
     Keyboard Events Methods
     -----------------------
-    1) keypress()   --> triggers when any keyboard key is being pressed.
+    1) keypress()   --> triggers when any keyboard key is being pressed and release
     2) keyup()      --> triggers when any pressed is being released.
-    3) keydown()    --> triggers when any pressed is being pressed down.
+    3) keydown()    --> triggers when any pressed is being pressed.
 
 */
 
@@ -101,6 +101,23 @@ $('document').ready(function(){
         });
     });
 });
+
+
+$('document').ready(function(){
+    $('.keyboard-events__methods').hover(function(){
+        $('#form-2').filter(':text').click(function(){
+            $(this).css('font-size', '25px');
+        })
+    })
+});
+
+$('document').ready(function(){
+    $('.document-events__methods').hover(function(){
+        $('img').load(function(){
+            
+        });
+    });
+})
 
 
 
