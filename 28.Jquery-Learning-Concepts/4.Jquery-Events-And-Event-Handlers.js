@@ -41,13 +41,22 @@
     ------------
     Jquery passes an event object to every event handler function. The event object includes important 
     properties and methods for cross-browser consistency.
+    
     Event Object Properties
     -----------------------
-    1) eventObj.value
-    2) eventObj.type
-    3) eventObj.target
-    4) eventObj.pageX
-    5) eventObj.pageY e.g. target, pageX, pageY, relatedTarget etc.
+    1) eventObj.value   --> gets the DOM element value that initiated the event.
+    2) eventObj.type    --> gets the DOM element type that initiated the event.
+    3) eventObj.target  --> gets the DOM element that initiated the event.
+    4) eventObj.pageX   --> mouse position at the time the event occurred, relative to the top left of the page on x axiswise
+    5) eventObj.pageY   --> mouse position at the time the event occurred, relative to the top left of the page on x axiswise
+    6) eventObj.which   --> determines which button or key that was pressed.
+    7) eventObj.data    --> Any data that was passed in when the event was bound.
+
+    Event Object Methods
+    --------------------
+    1) preventDefault()     --> prevents the default action of the event.
+    2) stopPropagation()    --> stops the event from bubbling up to other elements. 
+
 
 */
 
@@ -106,7 +115,7 @@ $('document').ready(function(){
 
 // biding non-existing element(Event Delegation)
 $('document').ready(function(){
-    $('event-delegation__list').on('click', 'li', function(eventObj){
-        console.log(`Something in a ${eventObj.target.tagName} was clicked, and we detected that it was an <li> element.`);
+    $('.event-delegation__binding ul').on('mouseover', 'li', function(eventObj){
+        console.log(`Something in a ${eventObj.target.tagName} was clicked, and we detected that it was an ${eventObj.target.childNodes.tagName}<li> element.`);
     });
 });
