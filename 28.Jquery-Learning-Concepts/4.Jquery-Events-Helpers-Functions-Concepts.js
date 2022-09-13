@@ -58,6 +58,7 @@
 
 */
 
+// working on form based events methods
 $('document').ready(function (){
     $('.mouse-events__methods').click(function(){
         $('.list-items  li:first-child').css('color', 'green');
@@ -78,6 +79,26 @@ $('document').ready(function (){
                 console.log('mouseenter');
             });
         })
+    });
+});
+
+
+// working on form based events methods
+$('document').ready(function(){
+    $('.form-events__methods').hover(function(){
+        $('#form-1').click(function(){
+            $('#name').focus(()=>{
+                $(this).css('color', 'green');
+            });
+            $('#name').blur(()=>{
+                $(this).css('color', '#ccdddd');
+            });
+        });
+        // 
+        $('#form-1').submit(function(event){
+            event.preventDefault();
+            $('#submitted-content').html('Form is submitted...');
+        });
     });
 });
 
