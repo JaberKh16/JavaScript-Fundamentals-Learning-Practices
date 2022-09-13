@@ -103,6 +103,7 @@ $('document').ready(function(){
 });
 
 
+// working with keyboard events methods
 $('document').ready(function(){
     $('.keyboard-events__methods').hover(function(){
         $('#form-2').filter(':text').click(function(){
@@ -111,6 +112,7 @@ $('document').ready(function(){
     })
 });
 
+// working with document events methods
 $('document').ready(function(){
     $('.document-events__methods').hover(function(){
         $('img').load(function(){

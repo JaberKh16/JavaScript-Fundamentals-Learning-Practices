@@ -16,18 +16,20 @@
     Jquery other function like- bind() to attach an event handler to the selected element
     whereas unbind() function is used to detattach an event handler of that selected 
     element. In later, Jquery version these two methods are being replaced with
-    on() and off() methods respectively.  
+    on() and off() methods respectively. Event handlers associated with the on()
+    method can be removed with the off() method. 
 
 */
 
 $('document').ready(function(){
-    $('.change-content').hover(function(){
-        $('.bind-button').on('click', function(){
-            $('#content').css('font-size', '20px');
-            $('#content').css('color', 'blue');
-        });
-        $('.unbind-button').click(function(){
-            $('#content').off(this);
-        });
-    })
+    // use of on() to attach event handler
+    $('.bind-button').on('click', function(){
+        $('#content').css('font-size', '20px');
+        $('#content').css('color', 'blue');
+    });
+    // use of off() to deattach event handler
+    $('.unbind-button').click(function(){
+        $('#content').off('click');
+    });
+    
 });
