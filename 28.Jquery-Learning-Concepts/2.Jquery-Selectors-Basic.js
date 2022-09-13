@@ -5,17 +5,19 @@
     
     Syntax Of Jquery Selectors
     --------------------------
-        $('selector').method();
+    1) $('selector').method();              // selecting using 'selector'
+    2) $('selector expression).method();    // selecting using 'selector expression'
+
 
     Selecting Ways Of Jquery Selectors
     ----------------------------------
-    1) $('h2')              --> selected through a HTML tag(element) name.
-    2) $('.className')      --> selected through a class name.
-    3) $('#idName')         --> selected through a id name.
-    4) $('[href]')          --> selected through a attribute name.
-    5) $('a[href='..']')    --> selected through a attribute value.
-    6) $('p .classTitle')   --> selected through psuedo selection.
-    7) $('p #idTitle')      --> selected through psuedo selection.
+    1) $('tagname')                             --> selected through a HTML tag(element) name.
+    2) $('.className')                          --> selected through a class name.
+    3) $('#idName')                             --> selected through a id name.
+    4) $('[attrname]')                          --> selected through a attribute name.
+    5) $('tagname[attrname='attrvalue']')       --> selected through a attribute value.
+    6) $('tagname .classTitle')                 --> selected through psuedo selection.
+    7) $('tagname #idTitle')                    --> selected through psuedo selection.
     
     Attributes Based Selectors
     --------------------------
@@ -30,21 +32,23 @@
 
     Form Based Selectors
     ---------------------
-    1) $(':input')          --> select all input elements.
-    2) $(':text')           --> select all input elements with type='text'
-    3) $(':password')       --> select all input elements with type='password'
-    4) $(':radio')          --> select all input elements with type='radio'
-    4) $(':checkbox')       --> select all input elements with type='checkbox'
-    4) $(':submit')         --> select all input elements with type='submit'
-    4) $(':reset')          --> select all input elements with type='reset'
-    4) $(':file')          --> select all input elements with type='file'
-    4) $(':image')          --> select all input elements with type='image'
-    4) $(':button')          --> select all input elements with type='button'
-    4) $(':enabled')          --> select all input elements which are enabled.
-    4) $(':disabled')          --> select all input elements which are disabled.
-    4) $(':checked')          --> select all input elements which are checked.
-    4) $(':reset')          --> select all input elements which are enabled.
-    4) $(':selected')          --> select all input elements which are selected.
+    1)  $(':input')              --> select all input elements.
+    2)  $(':text')               --> select all input elements with type='text'
+    3)  $(':password')           --> select all input elements with type='password'
+    4)  $(':radio')              --> select all input elements with type='radio'
+    5)  $(':checkbox')           --> select all input elements with type='checkbox'
+    6)  $(':submit')             --> select all input elements with type='submit'
+    7)  $(':reset')              --> select all input elements with type='reset'
+    8)  $(':file')               --> select all input elements with type='file'
+    9)  $(':image')              --> select all input elements with type='image'
+    10) $(':button')             --> select all input elements with type='button'
+    11) $(':enabled')            --> select all input elements which are enabled.
+    12) $(':disabled')           --> select all input elements which are disabled.
+    13) $(':checked')            --> select all input elements which are checked.
+    14) $(':reset')              --> select all input elements which are enabled.
+    15) $(':selected')           --> select all input elements which are selected.
+    15) $(':hidden')             --> select all elements which are hidden.
+    15) $(':visible')            --> select all input elements which are visible.
 
     Others Different Selectors
     --------------------------
