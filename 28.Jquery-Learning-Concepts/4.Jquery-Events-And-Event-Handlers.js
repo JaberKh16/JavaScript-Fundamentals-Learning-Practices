@@ -20,3 +20,14 @@
 
 */
 
+$('document').ready(function(){
+    $('.change-content').hover(function(){
+        $('.bind-button').on('click', function(){
+            $('#content').css('font-size', '20px');
+            $('#content').css('color', 'blue');
+        });
+        $('.unbind-button').click(function(){
+            $('#content').off(this);
+        });
+    })
+});
