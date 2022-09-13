@@ -56,7 +56,7 @@ $('document').ready(function(){
     // use of on() to attach event handler
     $('.bind-button').on('click', function(){
         $('#content').css('font-size', '20px');
-        $('#content').css('color', 'blue');
+        $('#content').css('color', '#dd23bb');
     });
     // use of off() to deattach event handler
     $('.unbind-button').click(function(){
@@ -72,3 +72,12 @@ $('document').ready(function(){
         alert(`${eventObj.target.value} button selected.`);
     })
 });
+
+// binding through named function
+const onMouserOver = function(){
+    alert('Changes of color..');
+    $('.div-element_content').css('color', '#44ccdd');
+}
+
+
+$('#div-element').on('mouseover', onMouserOver);
