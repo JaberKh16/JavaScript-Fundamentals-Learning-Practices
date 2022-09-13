@@ -5,9 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jquery Events Based Concepts- Jquery Events Methods</title>
+    <style>
+        .changeOnDoubleClick{
+            background-color:#324255;
+            color:#fff;
+            /* border:2px solid #324255; */
+            margin:auto 4px;
+            padding:4px;
+            width:40%;
+        }
+        .changeOnMouseOver{
+            color:#22548d;
+            /* border:2px solid #324255; */
+            width:40%;
+            margin:auto 4px;
+            padding:4px;
+        }
+        .changeOnMouseOut{
+            color:#3e0946;
+            /* border:2px solid #324255; */
+            background-color:#22548d;
+            width:40%;
+            margin:auto 4px;
+            padding:4px;
+        }
+    </style>
 </head>
 <body>
+    <section class="mouse-events__methods">
+        <ul class="list-items">
+            <li class="item" style="list-style-type:none;">Item-1</li>
+            <li class="item" style="list-style-type:none;">Item-2</li>
+            <li class="item" style="list-style-type:none;">Item-3</li>
+            <li class="item" style="list-style-type:none;">Item-4</li>
+            <li class="item" style="list-style-type:none;">Item-5</li>
+            <li class="item" style="list-style-type:none;">Item-6</li>
+        </ul>
+    </section>
+    <br><br>
+    <section class="form-events__methods">
+        <form id="">
+            <label for="name">Name:</label>
+            <input type="text" name="username" id="name">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="userpass" id="password">
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" name="male" id="gendermale">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" name="female" id="genderfemale">
+            <br><br>
+            <input type="button" value="Submit">
+        </form>
+        <br><br>
+    </section>
+    <section class="keyboard-events__methods">
+        <form action="#" class="keyboard-form__submit">
+            <label for="storename">Store Name:</label>
+            <input type="text" name="store" id="storename">
+            <br>
+            <label for="storeprofit">Store Profit:</label>
+            <input type="number" name="storeprofit" id="storeprofit">
+        </form>
+    </section>
+    <br><br>
+    <section class="document-events__methods">
+        <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?cs=srgb&dl=pexels-mike-b-170811.jpg&fm=jpg" alt="unavailable" width="200px" height="200px">
+    </section>
     <script src="../jquery-lib/jquery-3.6.1.js"></script>
-    <script src="../4.Jquery-Events-Based-Concepts.js"></script>
+    <script src="../4.Jquery-Events-Helpers-Functions-Concepts.js"></script>
 </body>
 </html>
