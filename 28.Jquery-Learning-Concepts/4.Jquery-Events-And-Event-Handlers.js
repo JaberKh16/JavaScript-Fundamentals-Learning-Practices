@@ -29,7 +29,8 @@
 
             Syntax-
 
-                        on(types, selector, data, fn )
+                    on(types, selector, data, fn )
+            
             Paramters-
             1) 'types'      --> one or more space-separated event types and optional namespaces
             2) 'selector'   --> selector string
@@ -60,7 +61,10 @@ $('document').ready(function(){
     });
     // use of off() to deattach event handler
     $('.unbind-button').click(function(){
-        $('#content').off('click');
+        $('#content').off('click', ':first', function(){
+            $('#content').css('font-size', '16px');
+            $('#content').css('color', '#000000');
+        });
     });
     
 });
@@ -79,5 +83,30 @@ const onMouserOver = function(){
     $('.div-element_content').css('color', '#44ccdd');
 }
 
-
 $('#div-element').on('mouseover', onMouserOver);
+
+
+
+// binding multiple events with multiple handlers
+$('document').ready(function(){
+    $('.multipleeventsacttion').on({
+        mouseenter: function(eventObj){
+            console.log(`${eventObj.target.tagName} has on mouse enter action`);
+            // console.dir(eventObj)
+        },
+        mouseleave: function(eventObj){
+            console.log(`${eventObj.target.tagName} has on mouse leave action`);
+        },
+        click: function(eventObj){
+            console.log(`${eventObj.target.tagName} has on click action`);
+        }
+    });
+});
+
+
+// biding non-existing element(Event Delegation)
+$('document').ready(function(){
+    $('event-delegation__list').on('click', 'li', function(eventObj){
+        console.log(`Something in a ${eventObj.target.tagName} was clicked, and we detected that it was an <li> element.`);
+    });
+});
