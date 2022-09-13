@@ -3,9 +3,9 @@
     =======================================
     Jquery provides some simple methods to work with events basically those methods attaches
     the event handlers(nothing but the function) to do particular task. Those handlers are 
-    being called upon when the selector for that handler being triggered. Insied this
-    handlers 'this' refers to the DOM element that initiated the event. This methods
-    are also called 'Jquery Helper Functions'.
+    being called upon when the selector for that handler being triggered. Inside this
+    handlers 'this' refers to that DOM element which initiated(raise) the event. 
+    This methods are also called 'Jquery Helper Functions'.
 
 
     The event handling function can receive an event object. This object can be used to determine 
@@ -26,7 +26,8 @@
     4)  mouseup()       --> fires when mouse button is released.
     5)  mouseenter()    --> called when the mouse enters the html area.
     6)  mouseleave()    --> called when the mouse leaves the html area.
-    7)  hover()         --> fires when the mouse enters and leave the the html area.
+    7)  hover()         --> fires when the mouse enters and leave the the html area
+                            just like the methods- mouseenter() and mouseleave().
     8)  mousemove()     --> fires when the mouse is moved.
     9)  mouseout()      --> fires when the mouse moves out of the html area.
     10) mouseover()     --> fires when the mouse moves over the html area.
