@@ -33,7 +33,7 @@
 
     Event Object Other Properties
     -----------------------------
-    1) event.currentTarget          --> to get the current DOM element within the Event Bubbling phase
+    1) event.currentTarget          --> to get the current DOM element within the Event Bubbling phase.
     2) event.data                   --> an optional object of data that is being to an event method when 
                                         executing handler is bounded(attached).
     3) event.delegateTarget         --> the element where the currently-called jQuery event handler was attached.
@@ -57,7 +57,30 @@
                                                     from bubbling up the DOM tree.
     5) event.isImmediatePropagationStopped()    --> returns whether event.stopImmediatePropagation() was ever called on this event object
 
-*/
+    trigger() Method Basic
+    ----------------------
+    trigger() method is used to executes all handlers and behaviors attached to the matched elements for the given event type.
+    Syntax- 
+        1) trigger(eventType, [, extraParamters]); // jQuery version 1.0
+        1) trigger(event, [, extraParamters]); // jQuery version 1.3
+
+    Parameters
+    ----------
+    1) eventType            --> a string containing JS event type such as 'click' or 'submit' etc.
+    2) event                --> a jQuery.Event object.
+    2) extraParameters      --> an additional parameter which can be used to pass an Array or Object to the event handler.
+
+    trigger() method is used to fire event manually and it executes the handlers in the same order they would be if the event
+    were triggered naturally by the user.
+        
+            $('#idName').trigger('click); // triggered on click event
+    
+    As of jQuery 1.3 version, trigger() method add event bubble up to the DOM tree which can be handle through stopPropagtion()
+    method on the event object passed into the event. Although trigger() method simulates an event activation, complete with
+    a synthesized(extracted version of) event object which doesn't perfectly replicate a naturally occuring event.
+
+
+*/  
 
 // creating a event object
 const eventObj = new jQuery.Event('click');
@@ -65,3 +88,10 @@ console.log(eventObj); // seeing the new creted event object properties and meth
 
 jQuery('div').trigger(eventObj); // to trigger the event on 'div' which can be found in - 'eventObj.target' 
 console.log(eventObj.target);
+
+
+// creating another event with passing property as a parameter
+const buttonEventObj = jQuery.Event('click', {keyCode:45});
+jQuery('button').trigger(buttonEventObj);
+console.log(buttonEventObj);
+
