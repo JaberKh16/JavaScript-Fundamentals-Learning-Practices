@@ -115,7 +115,11 @@ $('document').ready(function(){
 
 // biding non-existing element(Event Delegation)
 $('document').ready(function(){
-    $('.event-delegation__binding ul').on('mouseover', 'li', function(eventObj){
-        console.log(`Something in a ${eventObj.target.tagName} was clicked, and we detected that it was an ${eventObj.target.childNodes.tagName}<li> element.`);
+    $('.event-delegation__binding ul').on('mouseover',  function(eventObj){
+        console.log(`Something in a ${eventObj.target.tagName} was clicked, and we detected that it was an ${eventObj.target.tagName} element.`);
     });
+
+    // creating new items to add into the list
+    $('.event-delegation__list').append('<li> Item-1 </li>');
+    $('.event-delegation__list').append('<li> Item-2 </li>');
 });
