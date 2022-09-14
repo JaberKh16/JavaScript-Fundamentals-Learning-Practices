@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Events and Event Handlers</title>
+    <style>
+        h2{
+            color:blue;
+            text-decoration: underline;
+        }
+        section{
+            border: 2px solid #0c7005;
+            width:40%;
+            padding:10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Single Binding Example</h2>
+    <section class="single-binding">
+        <h3 id="content">Something to change</h3>
+        <button class="bind-button">Bind</button>
+        <button class="unbind-button">Unbind</button>
+    </section>
+    <br><br>
+    <h2>Multiple Binding Example</h2>
+    <section class="multiple-binding">
+        <input type="button" value="Save" id="save-button">
+        <input type="button" value="Delete" id="delete-button">
+    </section>
+    <br><br>
+    <h2>Named Function Binding Example</h2>
+    <section class="named-function__binding">
+        <div id="div-element">
+            <h3 class="div-element_content">Change Color</h3>
+        </div>
+    </section>
+    <br><br>
+    <h2>Multiple Events With Multiple Handlers Binding Example</h2>
+    <section class="multipleeventsmultiplehandlers-binding">
+        <div class="multipleeventsacttion" style="width:200px; height:200px; border: 1px solid #050e70;"></div>
+    </section>
+    <br><br>
+    <h2>Event Delegation(binding non-existing element) Binding Example</h2>
+    <section class="event-delegation__binding">
+        <ul class="event-delegation__list"></ul>
+    </section>
+    <script src="../jquery-lib/jquery-3.6.1.js"></script>
+    <script src="../4.Jquery-Events-And-Event-Handlers.js"></script>
+</body>
+</html>
