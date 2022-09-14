@@ -95,3 +95,11 @@ const buttonEventObj = jQuery.Event('click', {keyCode:45});
 jQuery('button').trigger(buttonEventObj);
 console.log(buttonEventObj);
 
+// passing data to the event object
+const eventObjWithDataPassing = jQuery.Event('logged', {
+    type:'logged',
+    username:'Mr. X',
+    userpass:'1133'
+});
+
+jQuery('form').trigger(eventObjWithDataPassing);
