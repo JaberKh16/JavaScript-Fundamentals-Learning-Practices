@@ -22,12 +22,14 @@
 
     Event Object Common Properties
     ------------------------------
-    1) target                       --> returns the DOM element that initiated the event.
-    2) relatedTarget                --> returns the other DOM element is involved in the event, if any.
-    3) pageX, pageY                 --> returns the mouse position relative to the left and right edge of the document.
-    4) metaKey                      --> indicated whether a META key was pressed when the event fired.
-    5) which                        --> returns for key or mouse events, this property indicates the specific key or button 
-                                        that was pressed.
+    Jquery Normalises the following properties to the cross-browser consistency and those are the common one's-
+
+        1) target                       --> returns the DOM element that initiated the event.
+        2) relatedTarget                --> returns the other DOM element is involved in the event, if any.
+        3) pageX, pageY                 --> returns the mouse position relative to the left and right edge of the document.
+        4) metaKey                      --> indicated whether a META key was pressed when the event fired.
+        5) which                        --> returns for key or mouse events, this property indicates the specific key or button 
+                                            that was pressed.
 
     Event Object Other Properties
     -----------------------------
