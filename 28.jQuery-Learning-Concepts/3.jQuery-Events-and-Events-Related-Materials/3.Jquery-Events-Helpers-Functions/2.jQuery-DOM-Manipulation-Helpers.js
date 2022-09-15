@@ -6,13 +6,13 @@
 
     jQuery DOM Manipulation Based Methods
     -------------------------------------
-    1) append(element)      --> inserts element at the end of the elements which is specified by a selector.
-    2) prepend(element)     --> inserts content at the begining of the elements which is specified by a selector.
-    3) appendTo(element)    --> 
-    4) prependTo(element)   --> 
-    5) before(element)      --> inserts content(new or existing DOM elements) before an element(s) which is 
+    1) append(content)      --> inserts element at the end of the elements which is specified by a selector.
+    2) prepend(content)     --> inserts content at the begining of the elements which is specified by a selector.
+    3) appendTo(content)    --> 
+    4) prependTo(content)   --> 
+    5) before(content)      --> inserts content(new or existing DOM elements) before an element(s) which is 
                                 specified by a selector.
-    6) after(element)       --> inserts content(new or existing DOM elements) after an element(s) which is
+    6) after(content)       --> inserts content(new or existing DOM elements) after an element(s) which is
                                 specified by a selector.
     7) remove(element)      --> removes element(s) from  the DOM with specified element.
     8) wrap(element)        --> wrap an HTML structure around each element which is specified by selector.
