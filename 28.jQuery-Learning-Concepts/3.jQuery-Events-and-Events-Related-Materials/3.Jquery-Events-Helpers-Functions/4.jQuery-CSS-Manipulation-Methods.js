@@ -78,11 +78,11 @@ $('.removeClass-method__section').ready(function(){
 
 
 
-// example of removeClass() method
-$('.removeClass-method__section').ready(function(){
+// example of toggleClass() method
+$('.toggleClass-method__section').ready(function(){
     // on button click remove the available class
-    $('#clickToRemove').click(function(){
-        $('#div-element__removeClass').removeClass(); // removing whatever class been availanle to this selector div
+    $('#clickToToggle').click(function(){
+        $('#div-element__toggleClass').toggleClass('changeBackgroundAndWidthProperty'); // toggling specified class for selector div
     });
 });
 
