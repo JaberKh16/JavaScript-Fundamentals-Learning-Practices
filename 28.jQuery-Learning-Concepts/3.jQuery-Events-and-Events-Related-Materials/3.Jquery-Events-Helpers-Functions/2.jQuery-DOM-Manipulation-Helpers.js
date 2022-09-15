@@ -7,17 +7,31 @@
     jQuery DOM Manipulation Based Methods
     -------------------------------------
     1) append(content)      --> inserts element at the end of the elements which is specified by a selector.
+                                Syntax- $('selector').append('content string')
     2) prepend(content)     --> inserts content at the begining of the elements which is specified by a selector.
-    3) appendTo(content)    --> 
-    4) prependTo(content)   --> 
+                                Syntax- $('selector').prepend('content string')
+    3) appendTo(content)    --> done same thing as append(), just difference is the syntax. here it will first
+                                take the content which need to be inserted then call upon the selector element
+                                to ensure where to inserted. 
+                                Syntax- $('content string').appendTo('selector')
+    4) prependTo(content)   --> done same thing as prepend(), just difference is the syntax. here it will first
+                                take the content which need to be inserted then call upon the selector element
+                                to ensure where to inserted. 
+                                Syntax- $('content string').prependTo('selector')
     5) before(content)      --> inserts content(new or existing DOM elements) before an element(s) which is 
-                                specified by a selector.
+                                specified by a selector. 
+                                Syntax- $('selector').before('content string')
     6) after(content)       --> inserts content(new or existing DOM elements) after an element(s) which is
                                 specified by a selector.
+                                Syntax- $('selector').after('content string')
     7) remove(element)      --> removes element(s) from the DOM with specified(selected) element.
-    8) wrap(element)        --> wrap an HTML structure around each element which is specified by selector.
-    9) replaceAll(element)  --> replace targetted element(s) with specified element, basically replace a content
+                                Syntax- $('selector').remove()
+    8) wrap(element)        --> wrap an HTML structure around each element which is specified by selector, basically
+                                wraps each target element with specified content element.
+                                Syntax- $('selector').wrap('content string')
+    9) replaceAll(element)  --> replace targetted element(s){content} with specified element, basically replace a content
                                 with specified(selector) element.
+                                Syntax- $('content string').replaceAll('selector')
 
 
 */
@@ -56,6 +70,13 @@ $('.removeMethodSection').ready(function(){
 $('.replaceAllMethodSection').ready(function(){
     // takes a content first and then replace with selected element --> $('content').replaceAll('selector')
     $('<span>Replacement p tag with span tag</span>').replaceAll('.replace-div__content p');
+});
+
+
+// example of wrap() method
+$('.wrapMethodSection').ready(function(){
+    // takes a selector element and then wrapes with some content element --> $('selector').wrap('content')
+    $('.wrap-divinsidal__content').wrap('div');
 });
 
 
