@@ -56,6 +56,7 @@
             Order-3 ==> <div></div>
             Order-4 ==> <body></body>
             Order-5 ==> <html></html>
+            Order-6 ==> document
 
     This bubbling basically called - "Event Bubbling" or another word "Event Propagation".
 

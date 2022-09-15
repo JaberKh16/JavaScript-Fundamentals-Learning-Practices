@@ -98,21 +98,31 @@ console.log(buttonEventObj);
 // passing data to the event object
 const eventObjWithDataPassing = jQuery.Event('#loggedInfo');
 console.log(eventObjWithDataPassing);
-jQuery('#logged').trigger(eventObjWithDataPassing); // targetting an #loggedInfo id to trigger event
+// jQuery('#logged').trigger(eventObjWithDataPassing); // targetting an #loggedInfo id to trigger event
 
-const username = eventObjWithDataPassing.target.input;
-const userpass = eventObjWithDataPassing.target.pass;
-const formtype = eventObjWithDataPassing.target.na;
-// console.log(username, userpass, formtype);
+const username = 'Mr. X';
+const userpass = '123';
+const formtype = 'register';
 
-if(eventObjWithDataPassing.isDefaultPrevented()){ // checking if preventDefault() is called or not
-    eventObjWithDataPassing.preventDefault(); // to stop the refreshing issue which is default
-    $( "#logged" ).trigger( 'submit', {
+jQuery('#loggedInfo').click(function(){
+    $( "#logged" ).trigger( 'submit',  {
         formtype:formtype,
         username:username,
         userpass: userpass,
     });
-}
+});
+
+
+// console.log(username, userpass, formtype);
+
+// if(eventObjWithDataPassing.isDefaultPrevented()){ // checking if preventDefault() is called or not
+//     eventObjWithDataPassing.preventDefault(); // to stop the refreshing issue which is default
+//     $( "#logged" ).trigger( 'submit', {
+//         formtype:formtype,
+//         username:username,
+//         userpass: userpass,
+//     });
+// }
 
 
 
@@ -128,10 +138,10 @@ console.log(event1)
 
 
 // different of trigger() and triggerHandler()
-$('#old').click(function(){
+$('#trigger-method__button').click(function(){
     $('#compare-methods__triggersinput').trigger('focus');
 })
-$('#new').click(function() {
+$('#triggerHandler-method__button').click(function() {
     $('#compare-methods__triggersinput').triggerHandler('focus');
 });
 $('#compare-methods__triggersinput').focus(function() {
