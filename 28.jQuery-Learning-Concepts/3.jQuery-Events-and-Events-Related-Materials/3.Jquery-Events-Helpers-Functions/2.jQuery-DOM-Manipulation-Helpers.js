@@ -14,7 +14,7 @@
                                 specified by a selector.
     6) after(content)       --> inserts content(new or existing DOM elements) after an element(s) which is
                                 specified by a selector.
-    7) remove(element)      --> removes element(s) from  the DOM with specified element.
+    7) remove(element)      --> removes element(s) from the DOM with specified(selected) element.
     8) wrap(element)        --> wrap an HTML structure around each element which is specified by selector.
     9) replaceAll(element)  --> replace targetted element(s) with specified element. 
 
@@ -35,14 +35,26 @@ $('.beforeMethodSection').ready(function(){
 
 
 // example of append() method
-$('.prependMethodSection').ready(function(){
+$('.appendAndprependMethodSection').ready(function(){
     $('#list-items').append('<li>New Link Appended</li>');
 });
 
 
 // example of prepend() method
-$('.prependMethodSection').ready(function(){
+$('.appendAndprependMethodSection').ready(function(){
     $('#list-items').prepend('<li>New Link Prepended</li>');
+});
+
+// example of remove() method
+$('.removeMethodSection').ready(function(){
+    // takes a selector which to be removed --> $('selector').remove() 
+    $('.remove-div__list #list-items .item').remove(); // removing the list element
+});
+
+// example of replaceAll() method
+$('.replaceAllMethodSection').ready(function(){
+    // takes a content first and then replace with selected element --> $('content').replaceAll('selector')
+    $('<span>Replacement Of Previous Bombshell</span>').replaceAll('.replace-div__content p');
 });
 
 
