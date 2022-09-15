@@ -55,7 +55,7 @@ $('.removeMethodSection').ready(function(){
 // example of replaceAll() method
 $('.replaceAllMethodSection').ready(function(){
     // takes a content first and then replace with selected element --> $('content').replaceAll('selector')
-    $('<span>Replacement Of Previous Bombshell</span>').replaceAll('.replace-div__content p');
+    $('<span>Replacement p tag with span tag</span>').replaceAll('.replace-div__content p');
 });
 
 
