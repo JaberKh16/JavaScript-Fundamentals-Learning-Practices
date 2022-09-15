@@ -38,27 +38,38 @@
 
 // example of after() method
 $('.afterMethodSection').ready(function(){
-
-    $('.div-element1').after('<ul><li>Item-1</li></ul>');
+    $('.div-element1').after("<ul><li style='color:#33d3bb;'>Item-1</li></ul>");
 });
 
 // example of before() method
 $('.beforeMethodSection').ready(function(){
-
-    $('.div-element2').before('<h2> Added h2 tag before p tag</h2>');
+    $('.div-element2').before("<h2 style='color:#cc3b33;'> Added h2 tag before p tag</h2>");
 });
 
 
 // example of append() method
 $('.appendAndprependMethodSection').ready(function(){
-    $('#list-items').append('<li>New Link Appended</li>');
+    $('#list-items').append("<li style='color:#cc3bcd;'>New Link Appended</li>");
 });
 
 
 // example of prepend() method
 $('.appendAndprependMethodSection').ready(function(){
-    $('#list-items').prepend('<li>New Link Prepended</li>');
+    $('#list-items').prepend("<li style='color:#fd0ba0;'>New Link Prepended</li>");
 });
+
+
+// example of appendTo() method
+$('.appendToMethodSection').ready(function(){
+    $("<span style='color:#44bbcd;'>Appending a span tag inside the div tag</span>").appendTo('.appendTo-divinsidal__content');
+});
+
+// example of prependTo() method
+$('.appendToandprependToMethodSection').ready(function(){
+    $("<span style='color:#ddcc34;'>Prepending a span tag inside the div tag</span>").prependTo('.prependTo-divinsidal__content');
+});
+
+
 
 // example of remove() method
 $('.removeMethodSection').ready(function(){
@@ -69,7 +80,7 @@ $('.removeMethodSection').ready(function(){
 // example of replaceAll() method
 $('.replaceAllMethodSection').ready(function(){
     // takes a content first and then replace with selected element --> $('content').replaceAll('selector')
-    $('<span>Replacement p tag with span tag</span>').replaceAll('.replace-div__content p');
+    $("<span style='color:green;'>Replacement p tag with span tag</span>").replaceAll('.replace-div__content p');
 });
 
 
