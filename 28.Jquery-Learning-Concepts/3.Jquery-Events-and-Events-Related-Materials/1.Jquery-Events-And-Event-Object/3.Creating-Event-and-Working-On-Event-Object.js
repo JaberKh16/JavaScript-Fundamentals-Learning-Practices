@@ -129,11 +129,11 @@ console.log(event1)
 
 // different of trigger() and triggerHandler()
 $('#old').click(function(){
-    $('input').trigger('focus');
+    $('#compare-methods__triggersinput').trigger('focus');
 })
 $('#new').click(function() {
-    $('input').triggerHandler('focus');
+    $('#compare-methods__triggersinput').triggerHandler('focus');
 });
-$('input').focus(function() {
+$('#compare-methods__triggersinput').focus(function() {
     $("<span>Focused!</span>").appendTo('#different-of__triggers').fadeOut(1000);
 });

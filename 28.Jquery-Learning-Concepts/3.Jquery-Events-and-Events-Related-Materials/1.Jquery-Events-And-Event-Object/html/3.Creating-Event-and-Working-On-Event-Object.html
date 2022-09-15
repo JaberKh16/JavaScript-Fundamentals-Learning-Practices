@@ -11,14 +11,20 @@
             width:40%;
             padding:5px;
         }
+        h3{
+            color:#0d297c;
+            text-decoration:underline;
+        }
     </style>
 </head>
 <body>
+    <h3>Creating Event Object- jQuery.Event()</h3>
     <div><p>Fissy</p></div>
     <br>
-    <button>Click</button>
+    <!-- <button>Click</button> -->
     <br><br>
     
+    <h3>Targettting particular section and trigger event</h3>
     <div>
         <form action="#" id="logged">
             <label for="username">Name:</label>
@@ -30,10 +36,11 @@
         <input type="submit" id="loggedInfo">
     </div>
     <br><br>
+    <h3>Difference between trigger() and triggerHandler() methods </h3>
     <div id="different-of__triggers">
         <button id="old">.trigger( "focus" )</button>
         <button id="new">.triggerHandler( "focus" )</button><br><br>
-        <input type="text" value="To Be Focused">
+        <input type="text" value="To Be Focused" id="compare-methods__triggersinput">
     </div>
     
     <script src="../../jquery-lib/jquery-3.6.1.js"></script>
