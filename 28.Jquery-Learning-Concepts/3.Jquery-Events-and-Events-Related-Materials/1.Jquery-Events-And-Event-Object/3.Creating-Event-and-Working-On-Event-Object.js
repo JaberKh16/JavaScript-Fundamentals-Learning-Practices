@@ -91,15 +91,49 @@ console.log(eventObj.target);
 
 
 // creating another event with passing property as a parameter
-const buttonEventObj = jQuery.Event('click', {keyCode:45});
-jQuery('button').trigger(buttonEventObj);
+const buttonEventObj = jQuery.Event('buttonClicked', {keyCode:45});
+jQuery('button').trigger(buttonEventObj); // targetting a button to trigger event
 console.log(buttonEventObj);
 
 // passing data to the event object
-const eventObjWithDataPassing = jQuery.Event('logged', {
-    type:'logged',
-    username:'Mr. X',
-    userpass:'1133'
-});
+const eventObjWithDataPassing = jQuery.Event('#loggedInfo');
+console.log(eventObjWithDataPassing);
+jQuery('#logged').trigger(eventObjWithDataPassing); // targetting an #loggedInfo id to trigger event
 
-jQuery('form').trigger(eventObjWithDataPassing);
+const username = eventObjWithDataPassing.target.input;
+const userpass = eventObjWithDataPassing.target.pass;
+const formtype = eventObjWithDataPassing.target.na;
+// console.log(username, userpass, formtype);
+
+if(eventObjWithDataPassing.isDefaultPrevented()){ // checking if preventDefault() is called or not
+    eventObjWithDataPassing.preventDefault(); // to stop the refreshing issue which is default
+    $( "#logged" ).trigger( 'submit', {
+        formtype:formtype,
+        username:username,
+        userpass: userpass,
+    });
+}
+
+
+
+
+
+// passing arbitary data through an event object
+var event1 = jQuery.Event( "logged" );
+event1.user = "Mr. Johathan";
+event1.pass = "jonathan2323";
+$("body").trigger(event1); // targettting the 'body' to trigger event
+console.log(event1)
+
+
+
+// different of trigger() and triggerHandler()
+$('#old').click(function(){
+    $('input').trigger('focus');
+})
+$('#new').click(function() {
+    $('input').triggerHandler('focus');
+});
+$('input').focus(function() {
+    $("<span>Focused!</span>").appendTo('#different-of__triggers').fadeOut(1000);
+});
