@@ -6,9 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery DOM Manipulation Helpers</title>
     <script src="../../jquery-lib/jquery-3.6.1.js"></script>
+    <style>
+        div{
+            border: 1px solid #CCCCCC;
+            padding: 5px;
+            width: 40%;
+        }
+        h3{
+            color:#0d426f;
+            text-decoration:underline;
+        }
+    </style>
 </head>
 <body>
-
-    <script src="../2.Jquery-DOM-Manipulation-Helpers.js"></script>
+    <h3>Example Of after() Method</h3>
+    <section class="afterMethodSection">
+        <div class="div-element1">
+            Inside the div-1 element
+        </div>
+    </section>
+    <br>
+    <h3>Example Of before() Method</h3>
+    <section class="beforeMethodSection">
+        <div class="div-element2">
+            <p id="paragraph-content">Inside the div-2 element</p>
+        </div>
+    </section>
+    <br>
+    <h3>Example Of apppend() and prepend() Methods</h3>
+    <section class="prependMethodSection">
+        <div class="div-with__list">
+            <p>Availabe Links are: </p>
+            <ul id="list-items">
+                <li class="item">Link-1</li>
+                <li class="item">Link-2</li>
+                <li class="item">Link-3</li>
+                <li class="item">Link-4</li>
+            </ul>
+        </div>
+    </section>
+    <script src="../2.jQuery-DOM-Manipulation-Helpers.js"></script>
 </body>
 </html>
