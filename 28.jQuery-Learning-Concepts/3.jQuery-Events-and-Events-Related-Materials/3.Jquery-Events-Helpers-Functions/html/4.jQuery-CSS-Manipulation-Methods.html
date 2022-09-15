@@ -17,8 +17,14 @@
         .changeDivElementStyling{
             background-color:#5a5a9e;
             border-radius:5px 10px;
-            width:40%;
             color:#fff;
+        }
+        .changeDivWidth{
+            width:40%;
+        }
+        .changeDivFont{
+            font-size:22px;
+            font-weight:bold;
         }
         .changeBackgroundAndWidthProperty{
             background-color:#a6a6c7;
@@ -29,34 +35,36 @@
 </head>
 <body>
     <h3>Example of css() Method</h3>
-    <section class="attribute-method__section">
-        <div id="div-element__attr">
+    <section class="css-method__section">
+        <div id="div-element__css">
             <p style="font-size:20px;">Text Conent Inside The Div</p>
         </div>
     </section>
     <br>
     <h3>Example of addClass() Method</h3>
-    <section class="prop-method__section">
-        <div id="div-element__prop">
+    <section class="addClass-method__section">
+        <div id="div-element__addClass">
             <p style="font-size:20px; font-weight: bold;">Text Conent Inside The Div</p>
         </div>
     </section>
     <br>
     <h3>Example of hasClass() Method</h3>
-    <section class="html-method__section">
-        <div id="div-element__html" class="changeBackgroundAndWidthProperty">
+    <section class="hasClass-method__section">
+        <div id="div-element__hasClass" class="changeBackgroundAndWidthProperty">
             <p style="font-size:16px;font-weight:bold">
                 This is paragraph.
             </p>
+            <button id="clickToCheckClassAvailability">Click To Check Class Availability For Div</button>
         </div>
     </section>
     <br>
     <h3>Example of removeClass() Method</h3>
-    <section class="text-method__section">
-        <div id="div-element__text" class="changeBackgroundAndWidthProperty">
+    <section class="removeClass-method__section">
+        <div id="div-element__removeClass" class="changeBackgroundAndWidthProperty">
             <p style="font-size:16px;font-weight:bold">
                 This is paragraph.
             </p>
+            <button id="clickToRemove">Click To Remove Class Property For Div</button>
         </div>
     </section>
     <br>
