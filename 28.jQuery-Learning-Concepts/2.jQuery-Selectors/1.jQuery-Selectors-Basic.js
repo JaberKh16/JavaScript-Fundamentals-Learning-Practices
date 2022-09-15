@@ -1,15 +1,15 @@
 /*
-    Jquery Selectors Concept
+    jQuery Selectors Concept
     ========================
-    Jquery Selector can use to select and manipulate HTML Elements.
+    jQuery Selector can use to select and manipulate HTML Elements.
     
-    Syntax Of Jquery Selectors
+    Syntax Of jQuery Selectors
     --------------------------
     1) $('selector').method();              // selecting using 'selector'
     2) $('selector expression).method();    // selecting using 'selector expression'
 
 
-    Selecting Ways Of Jquery Selectors
+    Selecting Ways Of jQuery Selectors
     ----------------------------------
     1) $('tagname')                             --> selected through a HTML tag(element) name.
     2) $('.className')                          --> selected through a class name.

@@ -1,7 +1,7 @@
 /*
-    Jquery Event Delegation and Event Propagation Concepts
+    jQuery Event Delegation and Event Propagation Concepts
     ======================================================
-    Let's know about Jquery Event Delegation and Event Propagation related information
+    Let's know about jQuery Event Delegation and Event Propagation related information
     which are being discuss through some examples see the following-
 
     Event Delegation

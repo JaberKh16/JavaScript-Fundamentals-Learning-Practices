@@ -1,7 +1,7 @@
 /*
-    Jquery Filter Based Methods
+    jQuery Filter Based Methods
     ===========================
-    Jquery Filter Methods is used to filter/search for specific element from the document(DOM).
+    jQuery Filter Methods is used to filter/search for specific element from the document(DOM).
 
     Syntax-
         1) $(selector).filter(selector);                // using selector filteration

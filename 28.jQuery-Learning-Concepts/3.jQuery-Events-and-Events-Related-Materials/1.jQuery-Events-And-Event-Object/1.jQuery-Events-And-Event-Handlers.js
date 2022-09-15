@@ -1,21 +1,21 @@
 /*
-    Jquery Events and Event Hanlders Concept
+    jQuery Events and Event Hanlders Concept
     ========================================
-    Jquery provides some simple methods to work with events basically those methods attaches
+    jQuery provides some simple methods to work with events basically those methods attaches
     the event handlers(nothing but the function) to do particular task. Those handlers are 
     being called upon when the selector for that handler being triggered. Insied this
     handlers 'this' refers to the DOM element that initiated the event. This methods
-    are also called 'Jquery Helper Functions'.
+    are also called 'jQuery Helper Functions'.
     
-    Jquery event methods trigger or attach a function to an event handler for the selected
-    element. Jquery simply provides a method named - on() to respond to any event on any
+    jQuery event methods trigger or attach a function to an event handler for the selected
+    element. jQuery simply provides a method named - on() to respond to any event on any
     selected elements which is called "Event Binding". 
 
     Event Binding Or Unbinding Based Methods
     ----------------------------------------
-    Jquery other function like- bind() to attach an event handler to the selected element
+    jQuery other function like- bind() to attach an event handler to the selected element
     whereas unbind() function is used to detattach an event handler of that selected 
-    element. In later, Jquery version these two methods are being replaced with
+    element. In later, jQuery version these two methods are being replaced with
     on() and off() methods respectively. Event handlers associated with the on()
     method can be removed with the off() method. 
     
@@ -39,7 +39,7 @@
 
     Event Object
     ------------
-    Jquery passes an event object to every event handler function. The event object includes important 
+    jQuery passes an event object to every event handler function. The event object includes important 
     properties and methods for cross-browser consistency.
     
     Event Object Properties
