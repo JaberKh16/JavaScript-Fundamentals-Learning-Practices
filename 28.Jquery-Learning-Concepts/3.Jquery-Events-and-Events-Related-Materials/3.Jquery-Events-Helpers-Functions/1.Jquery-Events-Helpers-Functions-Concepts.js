@@ -17,6 +17,7 @@
     b) Form Events Methods
     c) Documents Events Methods
     d) Keyboard Events Methods
+    e) Dimension Events Methods
 
     Mouse Events Methods
     --------------------
