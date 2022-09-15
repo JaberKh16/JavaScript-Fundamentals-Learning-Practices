@@ -16,7 +16,8 @@
                                 specified by a selector.
     7) remove(element)      --> removes element(s) from the DOM with specified(selected) element.
     8) wrap(element)        --> wrap an HTML structure around each element which is specified by selector.
-    9) replaceAll(element)  --> replace targetted element(s) with specified element. 
+    9) replaceAll(element)  --> replace targetted element(s) with specified element, basically replace a content
+                                with specified(selector) element.
 
 
 */
