@@ -25,7 +25,7 @@ body{
 .form-group label{
     font-weight: bold;
     font-size: 26px;
-    font-family: 'Poor Story', cursive;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .form-group input{
