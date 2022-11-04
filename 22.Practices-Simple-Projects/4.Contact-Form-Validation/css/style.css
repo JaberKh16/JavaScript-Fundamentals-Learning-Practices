@@ -28,6 +28,7 @@ body{
 
 .form-group input{
     height: 50px;
+    border-radius: 10px !important;
 }
 
 .form-group input[type='text']{
