@@ -14,7 +14,7 @@ document.getElementsByClassName('submit-data')[0].addEventListener('click', func
     errorMessage.classList.remove('error-message');
     let textContent = '';
 
-    if(userName.length < 3 && !Number.isInteger(userName.value)){
+    if(userName.length < 3 && !Number.isInteger(userName)){
         textContent += 'Enter a valid username';
         errorMessage.innerText = textContent;
         // errorMessage.style.cssText = 'display:block padding:16px text-align:center';
