@@ -61,7 +61,7 @@ body{
     text-transform: capitalize;
     position: relative;
     top: 0px;
-    right: -25%;
+    right: -30%;
 }
 
 .btn[type='submit']:hover{
@@ -73,6 +73,7 @@ body{
 }
 
 .error-message{
+    display: none;
     margin-bottom: 10px;
     padding: 10px;
     background-color: #eef1ef;
@@ -80,4 +81,5 @@ body{
     border-radius: 20px;
     font-size: 20px;
     transition: all 0.5s ease-out;
+    text-align: center;
 }
