@@ -1,5 +1,13 @@
+body{
+    background-image: url('../img/background-img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .col-md-8{
+    border: 2px solid #343434 !important;
     border-radius: 20px !important;
+    outline: none !important;
 }
 
 .form-title{
