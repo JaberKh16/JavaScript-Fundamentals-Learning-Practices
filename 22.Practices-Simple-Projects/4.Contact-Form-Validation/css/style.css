@@ -71,3 +71,13 @@ body{
     border: 1px solid #0e4e05;
     font-family: 'Poor Story', cursive;
 }
+
+.error-message{
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #eef1ef;
+    color: #868410;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 0.5s ease-out;
+}
