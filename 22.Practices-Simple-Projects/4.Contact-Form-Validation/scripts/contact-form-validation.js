@@ -6,7 +6,6 @@ document.getElementsByClassName('submit-data')[0].addEventListener('click', func
     const userEmail = document.getElementById('userEmail').value;
     const userMobile = document.getElementById('userMobile').value;
     const userMessage = document.getElementById('userMessage').value;
-    console.log(userName);
 
 
     // selecting the error message content field
@@ -17,7 +16,7 @@ document.getElementsByClassName('submit-data')[0].addEventListener('click', func
     // validating the 'usernName' input field
     if(userName.length < 3 && !Number.isInteger(userName)){
         textContent = 'Enter a valid username';
-        errorMessage.innerText = textContent;
+        userName.innerText = textContent;
         // errorMessage.style.cssText = 'display:block padding:16px text-align:center';
         errorMessage.classList.add('error-message');
         return false; 
@@ -31,7 +30,7 @@ document.getElementsByClassName('submit-data')[0].addEventListener('click', func
         return false;
     }
     // validating the 'userEmail' input field
-    if(userEmail.length <8  && !Number.isInteger(subjectMatter.value)){
+    if(userEmail.length < 8  && !Number.isInteger(userEmail.value) || userEmail.indexOf('@')==-1){
         textContent ='Enter a valid email';
         errorMessage.innerText = textContent;
         errorMessage.classList.add('error-message');
@@ -45,11 +44,13 @@ document.getElementsByClassName('submit-data')[0].addEventListener('click', func
         return false;
     }
     // validating the 'userMessage' input field
-    if(subjectMatter.length < 15 && !Number.isInteger(subjectMatter.value)){
+    if(userMessage.length < 15 && !Number.isInteger(userMessage.value)){
         textContent ='Enter only a text message';
         errorMessage.innerText = textContent;
         errorMessage.classList.add('error-message');
         return false;
     }
+
+    // to prevent submission of submit button click
     return false;
 });
