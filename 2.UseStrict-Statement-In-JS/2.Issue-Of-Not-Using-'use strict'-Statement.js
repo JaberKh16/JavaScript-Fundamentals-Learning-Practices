@@ -20,7 +20,7 @@ let versionInfo = "21.26.1";
 
 'use strict'
 
-/*  Seconf Issue: whatever variable declared after the 'use strict', if didnt use declaring variable 
+/*  Second Issue: whatever variable declared after the 'use strict', if didnt use declaring variable 
     of it using either old way 'var' or using 'let' while creating variables then it will through
     an error "ReferenceError". If 'use strict' not declard before then browser will allow it to work 
     normally as a variable.

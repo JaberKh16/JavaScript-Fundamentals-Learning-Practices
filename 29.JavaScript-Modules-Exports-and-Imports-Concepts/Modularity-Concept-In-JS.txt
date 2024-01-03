@@ -1,0 +1,8 @@
+Modularity Concept In JS
+========================
+Modularity Supports:
+	a. separation and organizing of codes or blocks
+	b. share code can be used which serves a single logic features to the larger business logic
+	c. avoid naming conflicts
+	d. separation of scopes
+
