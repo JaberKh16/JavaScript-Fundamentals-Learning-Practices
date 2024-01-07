@@ -6,7 +6,7 @@
 'use strict';
 
 // defining the array
-const itemsArray = [1, 43, 6, 32, 78, 34, 9];
+const itemsArray = [1, 43, 6, 32, 78, 34, 9, 12];
 
 // defining a function to extract the index value of an item
 const itemIndexValue = function(arr, item) {
@@ -18,6 +18,7 @@ const thirdthIndeValue = (arr, item) =>{
 }
 
 console.log(itemIndexValue(itemsArray, 6));
-console.log(itemIndexValue(itemsArray, 2));
+console.log(thirdthIndeValue(itemsArray, 2));
+console.log(itemIndexValue(itemsArray, 4));
 
 

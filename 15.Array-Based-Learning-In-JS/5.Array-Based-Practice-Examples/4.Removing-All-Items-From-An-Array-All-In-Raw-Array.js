@@ -1,6 +1,6 @@
 /*
-    Question-4. Removing all instances of a value from an array 
-                (modify the original array).
+    Question-4. Removing all instances of a value from an array (modify the original array).
+                
 
     Hint- use arr.splice() method
 */

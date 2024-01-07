@@ -1,7 +1,7 @@
 /*
     Question-5. Removing First Item From The Array
 
-    Hint- use arr.shift() to remove the fast item which returns removed item
+    Hint- use arr.shift() to remove the first item which returns removed item
 
 */
 

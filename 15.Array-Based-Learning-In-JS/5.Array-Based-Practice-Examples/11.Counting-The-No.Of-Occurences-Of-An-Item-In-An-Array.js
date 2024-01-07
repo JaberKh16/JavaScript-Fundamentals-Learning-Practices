@@ -11,15 +11,14 @@
 const itemsArray = [1, 43, 6, 32, 1, 43, 78, 34, 1, 9];
 
 // defining the function
-const countOccurences = (arr, targetedValue)=>arr.reduce(function(acc, val){
-    if(val === targetedValue){
-        return acc++;
+const countOccurences = (arr, targetedValue)=>arr.reduce(function(totalCount, iterateItem){
+    if(iterateItem === targetedValue){
+        return totalCount++;
     }
     else{
-        return acc;
+        return totalCount;
     }
 }, 0)
-
 console.log(countOccurences(itemsArray, 1));
 
 

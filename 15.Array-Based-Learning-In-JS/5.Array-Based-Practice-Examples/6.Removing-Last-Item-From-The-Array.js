@@ -1,7 +1,7 @@
 /*
     Question-6. Removing Last Item From The Array
 
-    Hint- use arr.pop() to remove the last item which returns removed item
+    Hint- use arr.pop() to remove the last item and returns removed item
 */
 
 // defining the 'use strict' statement

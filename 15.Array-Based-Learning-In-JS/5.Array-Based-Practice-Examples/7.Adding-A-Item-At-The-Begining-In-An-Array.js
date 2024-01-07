@@ -1,7 +1,7 @@
 /*
     Question-7. Adding A Item At The Beginnig Of An Array
 
-    Hint- use arr.unshift() appends at the begining and returns new length
+    Hint- use arr.unshift() appends at the begining and returns new array length
 */
 
 // defining the 'use strict' statement

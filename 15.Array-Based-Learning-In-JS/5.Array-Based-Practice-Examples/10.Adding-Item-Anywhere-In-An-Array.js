@@ -16,7 +16,6 @@ const insertItem = function(arr, item=40, index=5) {
     arr.splice(index, 0, item); // inserting item 40 at index 5 
     return arr;
 }
-
 console.log(insertItem(itemsArray));
 
 

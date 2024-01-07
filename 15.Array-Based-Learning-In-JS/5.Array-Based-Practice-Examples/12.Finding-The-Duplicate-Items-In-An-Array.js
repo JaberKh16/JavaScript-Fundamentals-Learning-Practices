@@ -1,5 +1,5 @@
 /*
-    Question-12. 
+    Question-12. Find Duplicates Itens In An Array
 */
 
 // defining the 'use strict' statement
