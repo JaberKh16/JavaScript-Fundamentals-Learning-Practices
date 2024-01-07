@@ -12,7 +12,7 @@
     fill() generally takes atleast a single parameter 'value' which can be any variable type
     like- a single value, an object, an array.
     
-    fill() doesn't change the original array so non mutable method
+    fill() does change the original array so mutable method.
 
 */
 
