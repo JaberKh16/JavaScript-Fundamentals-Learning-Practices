@@ -1,8 +1,8 @@
 /*
     Function Expression/Anonymous Function
     ======================================
-    Anonymous Functions are those function which doesn't
-    habe its function name.
+    Anonymous Functions are those function which doesn't have its function name.
+    
     
     For Example:
 
