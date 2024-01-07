@@ -10,6 +10,7 @@
     
     2)  let arr = [1, 2, 4]; // 3 items having index 0 to 2
         arr[1] = "this"; // index 1 value will be replace with string type 'this'
+        arr[2] = {name: "RK"} // updating with object 
     
 */
 

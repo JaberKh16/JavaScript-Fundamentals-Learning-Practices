@@ -1,9 +1,9 @@
 /*
     Array Based Basic In JS
     =======================
-    In JS, Array is basically a list of elements which can be
-    either homegeneous type or non-homogeneous type also. Array
-    is basically used to store multiple values at a time.
+    In JS, Array is basically a list of elements which can be either homegeneous type
+    or non-homogeneous type also. Array is basically used to store multiple values
+    at a time.
     
     In JS, array can be access through an index where the index value
     starts from 0.

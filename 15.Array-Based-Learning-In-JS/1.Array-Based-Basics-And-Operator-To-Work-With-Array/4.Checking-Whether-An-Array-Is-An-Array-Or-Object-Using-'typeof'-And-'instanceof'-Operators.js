@@ -9,6 +9,10 @@
         this operator introduced by ES6 to check whether any type is
         array or not and resulted as boolean value.
         Syntax:     array_name instance Array;    
+
+    Note: In JS, some variable types are by default an object like- array, functions
+    But an array created with Array() class is the pure array variable.
+    
 */
 
 // Declaring 'use strict' statement

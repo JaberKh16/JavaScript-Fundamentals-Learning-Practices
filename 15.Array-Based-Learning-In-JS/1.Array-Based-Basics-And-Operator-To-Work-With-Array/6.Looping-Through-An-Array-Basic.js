@@ -1,5 +1,5 @@
 /*
-    Looping Through The Array Using For Loop
+    Looping Through The Array Using Traditional For Loop
 */
 
 // Declaring 'use strict' statement
