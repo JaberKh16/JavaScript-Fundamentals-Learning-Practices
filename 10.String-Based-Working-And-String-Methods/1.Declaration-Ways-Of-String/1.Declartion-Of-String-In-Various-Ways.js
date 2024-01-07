@@ -11,7 +11,7 @@ let userName = "Austin Power";
 // Declaring String Type using String() Class Object
 let userEmail = new String("austin_power@gmail.com");
 
-// String Comparsion - Equality Check 
+// String Comparsion - Equality  Check 
 let message1 = "Something";
 let message2 = new String("Something");
 

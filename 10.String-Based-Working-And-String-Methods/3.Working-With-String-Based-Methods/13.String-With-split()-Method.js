@@ -3,7 +3,7 @@
     =================================
     str.split('condition') method is used to convert string to
     an array of characters/words/substring based on the parameter 
-    'condition' where 'conditio' is basically the separator string value
+    'condition' where 'condition' is basically the separator string value
     which is considered while spliting the string into parts.
 
 */

@@ -7,8 +7,8 @@
     array.push() does take single parameter 'element' which denotes
     the element needs to add at the end of the array.
 
-    If you assign this pusg() operation into a variable then it will store
-    the length of newly element added sarray to that variable.
+    If you assign this push() operation into a variable then it will store
+    the length of newly pushed element array to that assigned variable.
         let newlyAddedElementLength = array.push(element); // store the length of newly item included array
 */
 

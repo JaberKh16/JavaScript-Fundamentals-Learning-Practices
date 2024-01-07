@@ -38,3 +38,10 @@ const checkEveryPersonIsMale = personsInformation.every((personsInformation)=>{
     return personsInformation.age >= 28 
 });
 console.log(checkEveryPersonIsMale); 
+
+const checkEveryPersonIsFemale = personsInformation.every(function(person){
+    if(person.gender === "female" && person.age <=38){
+        return person;
+    }
+});
+console.log(checkEveryPersonIsFemale);

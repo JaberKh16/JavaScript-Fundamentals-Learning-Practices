@@ -3,8 +3,8 @@
     ================================
     Number.isInteger(number) method is used to check whether a number
     has a decimal point in it or not and returns a boolean value 
-    based on that. If Having Decimal Point then its not a integer thus return 'true'
-    otherwise 'false' 
+    based on that. If Having Decimal Point then its not a integer thus return 'false'
+    otherwise 'true' 
 */
 
 // Declaring 'use strict' statement

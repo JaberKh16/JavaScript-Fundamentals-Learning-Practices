@@ -1,6 +1,6 @@
 /*
-    String Method: substring(start_index, length_of_str)
-    ====================================================
+    String Method: substr(start_index, length_of_str)
+    ==================================================
     str.substr(start_index, length_of_str) is used to extract the
     specified indexes based substring between 'start_index' to 'end_index'
     value. It doesn't modify the original string unless it gets

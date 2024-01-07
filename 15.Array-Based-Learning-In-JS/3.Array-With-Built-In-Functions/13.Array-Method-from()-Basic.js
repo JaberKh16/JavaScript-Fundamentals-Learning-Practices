@@ -30,7 +30,7 @@ const personsInformation = [
 
 console.log(personsInformation);
 
-// using from() methdo to creat a new copy of array
+// using from() methdo to create a new copy of array
 const newPersonInfo = Array.from([{'name': 'Rachel', 'age': 30, 'gender':'female'}]);
 console.log(newPersonInfo); // note: find() only gets the first information even if have duplicates
 

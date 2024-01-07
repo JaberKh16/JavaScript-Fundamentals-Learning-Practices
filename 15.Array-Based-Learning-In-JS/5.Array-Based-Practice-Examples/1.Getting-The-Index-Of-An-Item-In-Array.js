@@ -13,6 +13,11 @@ const itemIndexValue = function(arr, item) {
     return arr.indexOf(item);
 };
 
+const thirdthIndeValue = (arr, item) =>{
+    return arr.indexOf(item);
+}
+
 console.log(itemIndexValue(itemsArray, 6));
+console.log(itemIndexValue(itemsArray, 2));
 
 

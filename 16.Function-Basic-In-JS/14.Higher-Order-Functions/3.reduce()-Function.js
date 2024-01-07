@@ -49,6 +49,7 @@ const income = weeklyEarnings.reduce((previousValue, currentValue)=>{
 console.log(income);
 
 
+
 // Example-3
 const firstNames = ['Chandler', 'Joey', 'Rachel', 'Ross', 'Monica', 'Pheobe']
 const lastNames = ['Bing', 'Tribianni', 'Green', 'Geller', 'Geller', 'Buffay'];
