@@ -10,10 +10,11 @@
     array.
 
     Syntax:
-        array.copyWithin(targetIndex);              // targetIndex specifies position 
-        array.copyWithin(targetIndex, startIndex);  // targetIndex speciffies position  and
-                                                    // startIndex specifies from which index coping item will start
-
+        array.copyWithin(targetIndex);                         // targetIndex specifies position 
+        array.copyWithin(targetIndex, startIndex);            // targetIndex speciffies position  and
+                                                              // startIndex specifies from which index 
+                                                              // coping item will start
+        array.copyWithin(targetIndex, startIndex, endIndex);  // same like before not endIndex will be excluded
 
     Note: Remember this method just copies item within the array it doesn't add new item thus length
     of the array doesn't change. It is like copy items at/from the targetted index and then after copy reshuffle
@@ -28,4 +29,4 @@ console.log(`${fruits}`);
 
 // copying position is 2, copied from 4th index
 fruits.copyWithin(2, 4);
-console.log(`${fruits}`);
+console.log(`${fruits}`);   
