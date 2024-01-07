@@ -14,7 +14,11 @@
 
     It's working mechanism is like joining those iteration of every cases
     with logical OR(||) operation thus if any of the iteration case is
-    true then it resulted as true.
+    true then it resulted as true and exited. 
+
+    Means some() checks for the provided condition and check atleast one of the
+    condition matches if found matches then return 'true' and exhausted. If not
+    then return false after exhausted.
     
 */
 
