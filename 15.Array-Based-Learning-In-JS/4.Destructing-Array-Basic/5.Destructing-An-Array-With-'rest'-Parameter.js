@@ -1,8 +1,8 @@
 /*
     Destructing An Array With 'rest' Parameter
     ==========================================
-    Destructing an array with 'rest' parameter can be possibel
-    in JS. 
+    Destructing an array with 'rest' parameter can be possible In JS.
+     
     'rest' Parameter is used to map out the leftover elements of an array
     in a new array. 'rest' Parameter must be the last variable in the
     destructing syntax.

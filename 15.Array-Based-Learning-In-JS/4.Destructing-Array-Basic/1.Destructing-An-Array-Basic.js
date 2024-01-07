@@ -3,7 +3,7 @@
     ============================
     In Modern JS, ES6 introduce some new syntax to extract multiple properties from
     an array and then assign them to variable in one go. It is really helpful
-    to keep code clean and concise.
+    to keep code clean ssand concise.
 */
 
 // Declaring 'use strict' statement

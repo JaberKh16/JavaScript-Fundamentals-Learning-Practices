@@ -1,5 +1,5 @@
 /*
-    Swapping Example Of Array Destruction
+    Practice-1: Swapping Example Of Array Destruction
 */
 
 // Declaring 'use strict' statement

@@ -10,7 +10,7 @@
         let someValues = ['apple', 'car', 'letter'];
     
     Though 'spread' Operator holds an array value so assign it to variable,
-    let storedArrayVar = [...someValues];
+    let storedArrayVar = [...someValues]; // here assigned variables holds the array 
     console.log(storedArrayVar);
 
 */

@@ -3,6 +3,7 @@
     ==========================
     Destructing a nested array can be possibke with array
     destruction technique.
+    
     To destruct an a nested array use the following syntax,
         [,,var_name, [,, var_name]] = [,,value,[,, value]]
 
