@@ -1,3 +1,7 @@
+/*
+    Practice-1: Check if an item is existed in the array, if not then push that item
+*/
+
 // declaring the 'use strict' statement
 'use strict'
 
