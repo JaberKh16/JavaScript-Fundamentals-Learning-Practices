@@ -1,15 +1,16 @@
 /*
     Array Method: array.push(element)
     =================================
-    array.push(element) method is used push a single element 
-    at the end of the array.
+    array.push(element) method is used push a single element at the end of the array.
 
-    array.push() does take single parameter 'element' which denotes
-    the element needs to add at the end of the array.
+    array.push() does take single parameter 'element' which denotes the element 
+    needs to add at the end of the array.
 
     If you assign this push() operation into a variable then it will store
     the length of newly pushed element array to that assigned variable.
+
         let newlyAddedElementLength = array.push(element); // store the length of newly item included array
+        
 */
 
 // Declaring 'use strict' statement

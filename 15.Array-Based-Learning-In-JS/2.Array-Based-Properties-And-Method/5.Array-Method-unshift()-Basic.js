@@ -21,6 +21,6 @@ console.log(numbersList);
 
 
 // Adding a element and assign it to a variable
-let addedItem = numbersList.unshift(100); // store the length of the newly item included array
+let addedItem = numbersList.unshift(100); // store the length of the array with new item added
 console.log(addedItem); // results the length of the newly item included array
 console.log(`Length is: ${addedItem.length}`);

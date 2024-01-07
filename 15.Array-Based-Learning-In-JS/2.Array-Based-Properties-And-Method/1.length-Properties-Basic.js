@@ -1,8 +1,8 @@
 /*
     Array Property : array.length
     =============================
-    array.length is used to get the length of an array which 
-    return the length as numeric type value.
+    array.length is used to get the length of an array which return the length
+    as numeric type value.
 */
 
 // Declaring 'use strict' statement

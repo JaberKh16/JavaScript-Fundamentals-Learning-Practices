@@ -10,7 +10,9 @@
 
     If you assign this shift() operation into a variable then it will store
     the popped item into that variable.
+
         let poppedItem = array.shift(); // store the popped item
+        
 */
 
 // Declaring 'use strict' statement

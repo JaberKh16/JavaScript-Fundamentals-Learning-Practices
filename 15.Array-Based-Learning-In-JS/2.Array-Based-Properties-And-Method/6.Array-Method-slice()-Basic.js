@@ -1,11 +1,10 @@
 /*
     Array Method: array.slice()
     ===========================
-    array.slice() method is used to copy and clone an array
-    to a new array. 
+    array.slice() method is used to copy and clone an array to a new array. 
 
-    Note: slice() method doesn't change the original array instead
-    it creates a new shallow copy of the original array.
+    Note: slice() method doesn't change the original array instead it creates a 
+    new shallow copy of the original array.
 */
 
 // Declaring 'use strict' statement
