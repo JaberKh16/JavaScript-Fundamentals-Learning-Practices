@@ -7,7 +7,7 @@
     array.pop() doesn't take any parameter and pops out the last element.
 
     If you assign this pop() operation into a variable then it will store
-    the popped item into that variable.
+    the popped item into that variable as a value.
         let poppedItem = array.pop(); // store the popped item
 */
 
