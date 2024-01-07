@@ -4,7 +4,7 @@
     flat() method takes an array and flattend it to its 1D array. Its flat everything inside even
     if have the any level order of array items and then flatted it to 1D array like.
 
-    flat() doesn't take any parameters.
+    flat() doesn't take any parameters and as a return value returns the flatten array.
 
 */
 
