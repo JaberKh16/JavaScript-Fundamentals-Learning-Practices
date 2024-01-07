@@ -1,10 +1,12 @@
 /*
     Array Method: array.splice()
     ============================
-    array.splice() method is used to add, update and remove
-    elements from an array. It main purpose is to delete elements
-    from an array and returns an deleted elements with modifies the
-    original array.
+    array.splice() method is used to add, update and remove elements from 
+    an array. It main purpose is to delete elements from an array and 
+    returns an deleted elements with modifies the original array.
+
+    array.splice() is a mutable method though it perform its operation
+    on the original array.
 
     To add an element using the splice() method we need to pass the
     position where we want to add and how many elements to delete

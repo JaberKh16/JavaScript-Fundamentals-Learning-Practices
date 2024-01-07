@@ -1,18 +1,18 @@
 /*
     Array Method: array.includes()
     ==============================
-    array.includes() method is used to determine the presence of 
-    an element in an array if the element is found in array then 
-    returns a boolean value. If found then returns 'true', 
-    otherwise returns 'false'.
+    array.includes() method is used to determine the presence of an element
+    in an array if the element is found in array then returns a boolean value. 
+    If found then returns 'true', otherwise returns 'false'.
+    
 
     Syntax:
-        includes(value)
+        array.includes(value)
     
     includes() takes atleast a single parameter 'value' to check whether
     the specified 'value' have any presence in the array or not.
     
-    includes() method doesn't change the original array.
+    includes() method doesn't change the original array so non mutable method.
 
 */
 

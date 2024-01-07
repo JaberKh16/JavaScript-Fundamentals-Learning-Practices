@@ -3,7 +3,7 @@
     ===========================================================
     The concat() function merges one or more arrays and returns a merged array. 
     It is an immutable method. This means it doesn't change (mutate) the
-    existing arrays.
+    existing(original) arrays.
 
     concat() can take multiple parameters but takes a single parameter atleast to 
     denote what to be concated or merge with the existing array. Now it can be a value

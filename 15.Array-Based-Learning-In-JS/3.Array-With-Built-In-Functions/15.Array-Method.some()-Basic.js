@@ -2,9 +2,9 @@
     Array Method: array.some(callbackFunction)
     ==========================================
     array.some(callbackFunction) takes the "callbackFunction" which iterates
-    like forEach() helper method which then iterating over individual items
+    like- forEach() helper method which then iterating over individual items
     through "callbackFunction" over some condition and returns a boolean
-    value 'true' if some of the items matches the specified case, 
+    value.If some of the items matches the specified case then 'true', 
     otherwise returns 'false'.
     
     Syntax-    
@@ -39,4 +39,5 @@ const checkIfSomePersonIsMale = personsInformation.some((personsInformation)=> {
     console.log(++iterationCount + '-->' + (personsInformation.age >= 28));
     return personsInformation.age >= 28 
 });
+
 console.log(checkIfSomePersonIsMale); 

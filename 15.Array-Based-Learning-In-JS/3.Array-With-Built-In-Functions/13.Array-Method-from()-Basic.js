@@ -4,6 +4,8 @@
     The Array.from() static method creates a new, shallow-copied Array instance 
     from an array-like or iterable object.
 
+    Array.from() is a non mutable method and its under the Array() class.
+    
     Syntax-
         Array.from(arrayLike, mapFn, thisArg)
     
@@ -11,8 +13,6 @@
         1) arrayLike - An array-like or iterable object to convert to an array.
         2) mapFn - Map function to call on every element of the array.
         3) thisArg - Value to use as this when executing mapFn.
-
-
 
 */
 

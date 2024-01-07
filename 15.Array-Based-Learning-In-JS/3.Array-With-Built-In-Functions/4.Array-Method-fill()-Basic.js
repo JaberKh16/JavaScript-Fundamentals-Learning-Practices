@@ -9,10 +9,10 @@
         i)  fill(values)
         ii) fill(values, start_index, stop_index)
 
-    fill() generally takes atleast a single parameter 'value' which can be 
-    a single value or object or array.
+    fill() generally takes atleast a single parameter 'value' which can be any variable type
+    like- a single value, an object, an array.
     
-    fill() doesn't change the original array.
+    fill() doesn't change the original array so non mutable method
 
 */
 

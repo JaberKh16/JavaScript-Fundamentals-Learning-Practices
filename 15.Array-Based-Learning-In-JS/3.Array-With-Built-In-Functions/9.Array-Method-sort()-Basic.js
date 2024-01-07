@@ -1,8 +1,7 @@
 /*
     Array Method: array.sort()
     ==========================
-    array.sort() method is used to sort the elements inside the
-    array. 
+    array.sort() method is used to sort the elements inside the array.  
 
     sort() method does the sorting in ascending order by default 
     if not specified.
@@ -10,7 +9,7 @@
     sort() doesn't take any parameters and perform the reverse
     operation.
 
-    sort() method does modifies the original array.
+    sort() method does modifies the original array, so mutable method.
 
     sort() method can take an optional comparator function as an
     argument to denote the ordering criteria. You can write a comparator

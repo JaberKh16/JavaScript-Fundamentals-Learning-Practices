@@ -2,9 +2,9 @@
     Array Method: array.every(callbackFunction)
     ==========================================
     array.every(callbackFunction) takes the "callbackFunction" which iterates
-    like forEach() helper method which then iterating over individual items
-    through "callbackFunction" over some condition and returns a boolean
-    value 'true' if every items matches the specified case, 
+    like- forEach() helper method which then iterating over individual items
+    through "callbackFunction" over some condition and returns a boolean value.
+    if every items matches the specified case then return 'true', 
     otherwise returns 'false'.
     
     Syntax-    
@@ -41,6 +41,7 @@ console.log(checkEveryPersonIsMale);
 
 const checkEveryPersonIsFemale = personsInformation.every(function(person){
     if(person.gender === "female" && person.age <=38){
+        console.log(++iterationCount + '-->' + (person.age <=38));
         return person;
     }
 });

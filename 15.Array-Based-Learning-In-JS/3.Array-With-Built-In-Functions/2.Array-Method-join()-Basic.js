@@ -2,13 +2,14 @@
     Array With Built-In Function: array.join(separator)
     ===================================================
     array.join(separator) method is used to join any type of mulitiple values 
-    into an array.
+    into an array. Its a immutable method means doesnt change the original array.
     
     join() takes a single parameter 'separator' which denotes how to join the 
     elements where the join will be done through the specified separator while joining.
 
     separator can be anything like -  comma(,), semicolon(;), Pipe(|) ...  etc
-    If no separator specified then default separator will be taken which is comma(,).
+    If no separator specified then default separator will be taken which is comma(,)
+    and returns the comma separated items as string
 
 */
 

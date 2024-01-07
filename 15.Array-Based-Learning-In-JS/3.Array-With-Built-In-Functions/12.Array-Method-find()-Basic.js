@@ -2,10 +2,13 @@
     Array Method: array.find(callbackFunction)
     ==========================================
     array.find(callbackFunction) takes the "callbackFunction" which iterates
-    like filter() helper method which then iterating over individual items
+    like- filter() helper method which then iterating over individual items
     through "callbackFunction" over some condition and just the difference is
     that it only iterates for the first match of the condition and leaving
-    the rest match cases.
+    the rest match cases. 
+
+    find() iterates over the items as like an iterator and only returns the
+    first match case even if have duplicate matches.
     
     Syntax-    
             array.find(function(obj){
