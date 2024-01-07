@@ -19,7 +19,7 @@
 
 // Setting A Timer Counter
 let counter = 0;
-let timer = setTimeout(() => {
+let timer = setInterval(() => {
     console.log(`${++counter}`);
 }, 2000);
 console.log(`Timer Value is now: ${timer}`);
