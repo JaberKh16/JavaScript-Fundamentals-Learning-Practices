@@ -1,8 +1,7 @@
 /*
     setTimeout() Function Concept
     =============================
-    setTimeout() function is used to provide some delay
-    while calling the function.
+    setTimeout() function is used to provide some delay while calling the function.
 
     Syntax:
         setTimeout(functionName, delayMilisecs, arg1, arg2, ...argN);
