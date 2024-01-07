@@ -1,9 +1,9 @@
 /* 
     Assignment Operations With Array
     ================================
-    In JS, though every variable is dynamic so in the case for
-    array too. Such scenarios can be look while performing assigment
-    operation on array which are the following:
+    In JS, though every variable is dynamic so in the case for array too.
+    Such scenarios can be look while performing assigment operation on
+    array which are the following:
     
     1)  let arr = [1, 2, 3, 4]; // 4 items having index 0 to 3
         arr[4] = 5; // created an extra items and assigned to the index 4
