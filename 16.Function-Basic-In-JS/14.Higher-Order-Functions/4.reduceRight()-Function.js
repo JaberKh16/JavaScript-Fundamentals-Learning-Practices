@@ -1,15 +1,18 @@
 /*
-    Higher Order Functions- array.reduce()
-    ======================================
-    array.reduce() function executes a reducer function for an array
+    Higher Order Functions- array.reduceRight()
+    ===========================================
+    array.reduceRight() function executes a reducer function for an array
     element which generally reduces the whole array into a single value
-    with a specified case matches.
+    with a specified case matches(conditional check).
+
+    It is similar like reduce() method bt with a slight different it start
+    from last/right side of the array.
 
     Syntax- 
-        array.reduce(callbackFunc, initialValue); // takes an callbackFunc, initialValue as optional
+        array.reduceRight(callbackFunc, initialValue); // takes an callbackFunc, initialValue as optional
         
         e.g- 
-            array.reduce(function (accumulator, current){
+            array.reduceRight(function (accumulator, current){
 
             }, initialValue);
 
@@ -33,10 +36,10 @@
 // Example-1
 // defining an array
 const numbers = [100, 20, 42, 53, 674, 75, 31, 89];
-const currentIndex = 0;
-const summationOfNumbers = numbers.reduce((previous, current)=>{
+const initialValue = 0;
+const summationOfNumbers = numbers.reduceRight((previous, current)=>{
     return previous + current;
-}, currentIndex);
+}, initialValue);
 
 console.log(summationOfNumbers);
 
