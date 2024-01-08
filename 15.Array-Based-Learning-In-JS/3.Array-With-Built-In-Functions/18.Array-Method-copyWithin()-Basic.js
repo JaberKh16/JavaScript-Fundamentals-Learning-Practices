@@ -1,7 +1,7 @@
 /*
     Array Method: array.copyWithin()
     ================================
-    array.copyWithin() method copies some content from the array and organize the
+    array.copyWithin() method copies some content/part of content from the array and organize the
     copied item within the specified array.
 
     Its a mutable method means it changes the original array.
