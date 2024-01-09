@@ -30,7 +30,7 @@
     e. Maintaing state in async 
     f. setTimeouts
     g. Iterators
-    
+
 */
 
 // Example-1
@@ -44,23 +44,25 @@ function parent(){
 }
 
 const callFunc = parent();
-console.log(callFunc);
+console.log(callFunc); // store the return value which is function inner(){} --> [Function: inner]
+callFunc(); // to call the inner() functions
 
 
-// Example-1
+// Example-2
 function outerparent(){
     var b = 200;
     function parent(){
         var a = 10;
         function inner(){
-            console.log(a);
+            console.log(a, b);
         }
         a = 100;
-        inner();
+        return inner;
     }
-    parent();
+    return parent;
     
 }
 
-const callFunc2 = outerparent();
+const callFunc2 = outerparent(); // store the return value which is function parent(){} --> [Function: parent]
 console.log(callFunc2);
+callFunc2()(); // store the return value which is function inner(){} --> [Function: inner]() with invoking
