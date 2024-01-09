@@ -30,6 +30,11 @@
     e. Maintaing state in async 
     f. setTimeouts
     g. Iterators
+    h. Data and Encapsulation
+
+    Closures Disadvantage
+    ---------------------
+    a. Over Consumption Of Memory - though variables are not garbage collected for Closures
 
 */
 
@@ -56,7 +61,7 @@ function outerparent(){
         function inner(){
             console.log(a, b);
         }
-        a = 100;
+        let a = 100;
         return inner;
     }
     return parent;
@@ -66,3 +71,59 @@ function outerparent(){
 const callFunc2 = outerparent(); // store the return value which is function parent(){} --> [Function: parent]
 console.log(callFunc2);
 callFunc2()(); // store the return value which is function inner(){} --> [Function: inner]() with invoking
+
+
+
+
+// Example-3
+function outerparent2(){
+    var b = 200;
+    function parent(msg){
+        var a = 10;
+        function inner(){
+            console.log(a, b, msg);
+        }
+        let a = 100; // if 'a' is commented out, then it will try to resolve 'a' via going upper scope thus will get the value Global value 'a'
+        return inner;
+    }
+    return parent;
+    
+}
+let a = 200; // a has Global Scope which has different referece with parent() variable 'a'
+outerparent2()("Something")();
+
+
+// Example-4: Data Hiding And Encapsulating
+function counter(){
+    var count = 0;
+    return function innerIncrement(){
+        count++;
+        console.log(count);
+    }
+}
+
+var counter1 = counter();
+counter1();
+counter1();
+
+// counter2 is different variable then 'counter'
+var counter2 = counter();
+counter2();
+
+
+// Example-5: Data Hiding And Encapsulating(Scalling With Function Constructor)
+function CounterFuncConstructure(){
+    var count = 0;
+    this.innerIncrement = function innerIncrement(){
+        count++;
+        console.log(count);
+    }
+    this.innerDecrement = function innerIncrement(){
+        count--;
+        console.log(count);
+    }
+}
+
+var counterFuncConstructure  = CounterFuncConstructure();
+counterFuncConstructure.innerIncrement(); // to increment
+counterFuncConstructure.innerDecrement(); // to decrement
