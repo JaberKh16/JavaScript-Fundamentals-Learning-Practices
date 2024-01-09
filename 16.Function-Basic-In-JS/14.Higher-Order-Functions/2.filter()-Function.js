@@ -9,6 +9,8 @@
 
         });
 
+        function(value, index, array){}; // value returns valus, index for index and array is is for the array
+
 */
 
 // defining the 'use strict' statement
