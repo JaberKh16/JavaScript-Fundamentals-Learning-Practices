@@ -23,7 +23,7 @@ DOM Tree
 DOM Manipulation- DOM Selectors
 DOM Nodes- DOM Navigational Elements
 DOM Collection
-DOM Events
+DOM Events - Events, Event Flow(Event Bubbling, Event Capturing aka Event Trickling, Event Delegations)
 DOM Styling Elemenets
 DOM Attributes
 
