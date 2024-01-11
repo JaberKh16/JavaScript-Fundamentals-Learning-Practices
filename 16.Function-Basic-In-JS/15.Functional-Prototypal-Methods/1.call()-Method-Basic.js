@@ -40,7 +40,7 @@ const JD_INFO2 = {
 
 // function will be common
 const getJDInformation = function(companyName, companyType){
-    return this.offerTitle + '' + this.offerRoleType + '' + this.offerTechStack + '' + this.offerSalary + companyName + companyType;
+    return this.offerTitle + ' ' + this.offerRoleType + ' ' + this.offerTechStack + ' ' + this.offerSalary + companyName + companyType;
 }
 
 const getPostJD1 = getJDInformation.call(JD_INFO1, 'Enosis Solution', 'IT');

@@ -4,8 +4,8 @@
     apply() method basically used to apply a function to an object. It is similar like call()
     but the major difference is passing the arguements - here 'arguments' passed as array list.
 
-    'this' keyword referes to object can be different in terms of scope where the 'this' keyword is 
-    being written(basically whether its on Global, an object). This apply() Method invokes the
+    Now note- 'this' keyword referes to object can be different in terms of scope where the 'this' keyword 
+    is being written(basically whether its on Global, an object). This apply() Method invokes the
     function 'this' as an argument as well as take others arguments as an array or array-like 
     object format.
 
@@ -69,7 +69,7 @@ try{
         console.log(this); // now 'this' has the scope of global
         console.log(`${this.fullName()} who age is ${this.age} works at ${companyName} in ${division} division.`);
     }
-    gettingPersonInfo1(); // hits an TypeError: this.fullName() is not a function
+    gettingPersonInfo1(); // hits a TypeError: this.fullName() is not a function
 }catch(error){
     console.log(error.toString());
 }
