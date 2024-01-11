@@ -27,7 +27,7 @@
     ----------------------------------------------
     To convert HTMLCollection into an array use the method name-
             
-            Array.from(array-like-object); // converts the HTMLCollection into an Array Object
+        Array.from(array-like-object); // converts the HTMLCollection into an Array Object
     
 */
 

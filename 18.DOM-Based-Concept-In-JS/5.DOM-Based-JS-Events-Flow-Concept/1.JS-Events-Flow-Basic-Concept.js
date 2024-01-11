@@ -13,13 +13,17 @@
     Depending on the events firing nature Events Flow can be breakdown into two categories
     which are the following-
 
-        1) Events Bubling   -   Sequence of events firing from inner element to outer element, 
+        1) Events Bubling-      Sequence of events firing from inner element to outer element, 
                                 this is the default behaviour of events firing.
         
         2) Evnents Capturing-   Sequence of events firing from outer element to inner element,
                                 can be set through the addEventListener() third parameter named
                                 'boolean' which is normally 'false' means default, now set it 
                                 to 'true'.
+
+        3) Event Delegation-    Rather adding addEventListener() callback to every child elements directly
+                                add this callback to parent element which reduce the cost of performance
+                                issue when there's happen to be many child element being added callbacks.
 */
 
 // declaring 'use strict' statement
@@ -31,7 +35,9 @@ const headerElement = document.querySelector('header');
 const h2Element = document.querySelector('h2');
 
 
+// Example-1: Event Bubling - By Default
 // adding those selected element to the events listener
+console.log('Example Of Event Bubbling.......................');
 divElement.addEventListener('click', function(){
     const delayingTime = new Date().getTime() + 1000; // getTime() gets the time in numbers now adding 1000ms to make it 1sec
     while (new Date() < delayingTime){} // 'delayingTime' will always 1000ms ahead of normal new Date() time
@@ -46,3 +52,41 @@ headerElement.addEventListener('click', function(){
 h2Element.addEventListener('click', function(){
     console.log('From H2 Element');
 });
+
+
+
+// Example-2: Event Capturing- setting third parameter 'useCapture' == true
+console.log('Example Of Event Capturing.......................');
+divElement.addEventListener('click', function(){
+    const delayingTime = new Date().getTime() + 1000; // getTime() gets the time in numbers now adding 1000ms to make it 1sec
+    while (new Date() < delayingTime){} // 'delayingTime' will always 1000ms ahead of normal new Date() time
+    // console.log(delayingTime); 
+    console.log('From Div Element');
+}, true);
+
+headerElement.addEventListener('click', function(){
+    console.log('From Header Element');
+}, true);
+
+h2Element.addEventListener('click', function(){
+    console.log('From H2 Element');
+}, false);
+
+
+// Example-3: Event Propagation- setting e.stopPropagation() method: Stop Propagation
+console.log('Example Of Event Propagation.......................');
+divElement.addEventListener('click', function(){
+    const delayingTime = new Date().getTime() + 1000; // getTime() gets the time in numbers now adding 1000ms to make it 1sec
+    while (new Date() < delayingTime){} // 'delayingTime' will always 1000ms ahead of normal new Date() time
+    // console.log(delayingTime); 
+    console.log('From Div Element');
+}, true);
+
+headerElement.addEventListener('click', function(e){
+    console.log('From Header Element');
+    e.stopPropagation(); // to stop the propagation which means now event propagating stops thus event bubbling
+}, true);
+
+h2Element.addEventListener('click', function(){
+    console.log('From H2 Element');
+}, false);
