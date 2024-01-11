@@ -38,6 +38,12 @@ console.log(result); // Output: 9
 
 
 // Example-3 Generic Verison Of Curry Currying Another Function
+// Original function to be curried
+function add(x, y, z) {
+    return x + y + z;
+}
+
+  
 function curry(fn) {
     return function curried(...args) {
         if (args.length >= fn.length) {
