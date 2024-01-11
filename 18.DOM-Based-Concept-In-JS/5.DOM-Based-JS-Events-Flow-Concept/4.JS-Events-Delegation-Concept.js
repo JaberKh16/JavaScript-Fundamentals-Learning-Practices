@@ -30,26 +30,13 @@
 'use strict';
 
 // selecting multiple elements 
-const divElement = document.querySelector('div.wrapper');
-const headerElement = document.querySelector('header');
-const h2Element = document.querySelector('h2');
-
+const parentElement = document.querySelector('#categories');
 
 
 // Example-3: Event Propagation- setting e.stopPropagation() method: Stop Propagation
-console.log('Example Of Event Propagation.......................');
-divElement.addEventListener('click', function(){
-    const delayingTime = new Date().getTime() + 1000; // getTime() gets the time in numbers now adding 1000ms to make it 1sec
-    while (new Date() < delayingTime){} // 'delayingTime' will always 1000ms ahead of normal new Date() time
-    // console.log(delayingTime); 
-    console.log('From Div Element');
-}, true);
-
-headerElement.addEventListener('click', function(e){
-    console.log('From Header Element');
-    e.stopPropagation(); // to stop the propagation which means now event propagating stops thus event bubbling
-}, true);
-
-h2Element.addEventListener('click', function(){
-    console.log('From H2 Element');
-}, false);
+console.log('Example Of Event Delgation.......................');
+parentElement.addEventListener('click', function(e){
+    console.log(e);
+    console.log(e.target);    // to get the targetted element instance
+    console.log(e.target.id); // to get the targetted element instance id
+});
