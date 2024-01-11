@@ -20,6 +20,33 @@
     
 */
 
+// Example-1
+const JD_INFO1 = {
+    offerTitle: 'Full Stack Web Developer',
+    offerRoleType: 'Mid Level',
+    offerTechStack: ['PHP', 'JavaScript', 'Laravel', 'Node', 'React'],
+    offerSalary: 40000
+}
+
+const JD_INFO2 = {
+    offerTitle: 'Backend Web Developer',
+    offerRoleType: 'Entry Level',
+    offerTechStack: ['Laravel', 'Node'],
+    offerSalary: 30000
+}
+
+// function will be common
+const getJDInformation = function(companyName, companyType){
+    return this.offerTitle + '' + this.offerRoleType + '' + this.offerTechStack + '' + this.offerSalary + companyName + companyType;
+}
+
+const getPostJD1 = getJDInformation.call(JD_INFO1, 'Enosis Solution', 'IT');
+const getPostJD2 = getJDInformation.call(JD_INFO2, 'Field Nation', 'IT & Businness Consultance');
+console.log(getPostJD1);
+console.log(getPostJD2);
+
+
+// Example-2
 let personInfo = {
     firstName: 'John',
     lastName: 'Smith',

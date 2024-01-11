@@ -29,6 +29,37 @@
     
 */
 
+// Example-1
+const JD_INFO1 = {
+    offerTitle: 'Full Stack Web Developer',
+    offerRoleType: 'Mid Level',
+    offerTechStack: ['PHP', 'JavaScript', 'Laravel', 'Node', 'React'],
+    offerSalary: 40000
+}
+
+const JD_INFO2 = {
+    offerTitle: 'Backend Web Developer',
+    offerRoleType: 'Entry Level',
+    offerTechStack: ['Laravel', 'Node'],
+    offerSalary: 30000
+}
+
+// function will be common
+const getJDInformation = function(companyName, companyType, postDate){
+    return this.offerTitle + '' + this.offerRoleType + '' + this.offerTechStack + '' + this.offerSalary + companyName + companyType + '' + postDate;
+}
+
+const getPostJD1 = getJDInformation.bind(JD_INFO1, ['Enosis Solution', 'IT'], '17-July,2021');
+const getPostJD2 = getJDInformation.bind(JD_INFO2, ['Field Nation', 'IT & Businness Consultance'], '17-July,2022');
+console.log(getPostJD1);
+console.log(getPostJD2);
+
+// invoking function
+getPostJD1();
+
+
+// Example-2
+// creating objects
 let personInfo = {
     firstName: 'John',
     lastName: 'Smith',
@@ -46,12 +77,13 @@ let personProfessionInfo ={
 }
 
 try{
-    // before invoking this function through call()
+    // before invoking this function through bind()
     const gettingPersonInfo1 = function (companyName, division){
         console.log(this); // now 'this' has the scope of global
         console.log(`${this.fullName()} who age is ${this.age} works at ${companyName} in ${division} division.`);
     }
-    gettingPersonInfo1(); // hits an TypeError: this.fullName() is not a function
+    gettingPersonInfo1(); // hits: returns a TypeError: this.fullName() is not a function
+    // gettingPersonInfo1.bind(personInfo, 'Eyenet', 'Software-IT'); 
 }catch(error){
     console.log(error);
 }
@@ -65,11 +97,12 @@ const gettingPersonInfo = function (companyName, division){
     console.log(`${this.fullName()} who age is ${this.age} works at ${companyName} in ${division} division.`);
 }
 
-const gettingPersonalInfo = gettingPersonInfo.bind(personInfo, ['Enosis Solution'], 'IT');
+const gettingPersonalInfo = gettingPersonInfo.bind(personInfo, ['Enosis Solution'], 'IT'); 
 gettingPersonalInfo();
 
 // another example of bind()
 const gettingProfessionInfo = function (callback){
+    // adding arguments through apply()
     // using the callback function concept here invoking with apply()
     callback.apply(personInfo, ['EycleTech', 'IT']);
     console.log(`He is a ${this.designation} have experience of ${this.experiencedYear} years as a ${this.profession}.`);
