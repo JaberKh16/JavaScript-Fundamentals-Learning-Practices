@@ -1,29 +1,28 @@
 /*
-    JavaScript Events Flow Basic Concept
-    ====================================
-    Events in JS, has the sequence which tells how those events have been occured when 
-    multiple events have been triggered, those sequence of ordering is called Events Flow.
+    JavaScript Event Delegation Basic Concept
+    =========================================
+    Rather adding addEventListener() callback to every child elements directly
+    add this callback to parent element which reduce the cost of performance
+    issue when there's happen to be many child element being added callbacks.
 
-    Generally, JS Evnets occurs(fires) from inner child to outer child means means 
-    inner element to outer element.
 
-    
-    Types of Events Flow
-    --------------------
-    Depending on the events firing nature Events Flow can be breakdown into two categories
-    which are the following-
+    Advantages Of Event Delegation
+    ------------------------------
+    1. Less Memory Consumption - attaching of single event handlers for child elements 
+    2. Less Code- Reusability
+    3. DOM Manipulation - 
 
-        1) Events Bubling-      Sequence of events firing from inner element to outer element, 
-                                this is the default behaviour of events firing.
+    Disadvantage Of Event Delegation
+    --------------------------------
+    Some events are not propagating means there has no event
         
-        2) Evnents Capturing-   Sequence of events firing from outer element to inner element,
-                                can be set through the addEventListener() third parameter named
-                                'boolean' which is normally 'false' means default, now set it 
-                                to 'true'.
-
-        3) Event Delegation-    Rather adding addEventListener() callback to every child elements directly
-                                add this callback to parent element which reduce the cost of performance
-                                issue when there's happen to be many child element being added callbacks.
+        a.Example Of events non bubbling:
+            1. blur
+            2. window.resize
+            3. scroll
+            4. focus
+        b. use of stopPropagtion() method on element
+        
 */
 
 // declaring 'use strict' statement
@@ -39,4 +38,7 @@ parentElement.addEventListener('click', function(e){
     console.log(e);
     console.log(e.target);    // to get the targetted element instance
     console.log(e.target.id); // to get the targetted element instance id
+    if(e.target.tagName === 'LI'){
+        window.location.href = "/" + e.target.id;s
+    }
 });
