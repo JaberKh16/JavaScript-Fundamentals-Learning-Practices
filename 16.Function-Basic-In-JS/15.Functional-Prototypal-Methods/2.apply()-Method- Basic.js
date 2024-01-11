@@ -1,19 +1,21 @@
 /*
     Functional Prototypal Method- apply() Method
     ===========================================
-    'this' keyword referes to object can be different in terms
-    of scope where the 'this' keyword is being written(basically 
-    whether its on Global, an object). This apply() Method invokes the
-    function 'this' as an argument as well as take others arguments
-    as an array or array-like object format.
+    apply() method basically used to apply a function to an object. It is similar like call()
+    but the major difference is passing the arguements - here 'arguments' passed as array list.
+
+    'this' keyword referes to object can be different in terms of scope where the 'this' keyword is 
+    being written(basically whether its on Global, an object). This apply() Method invokes the
+    function 'this' as an argument as well as take others arguments as an array or array-like 
+    object format.
 
     Syntax-
         someFunc.apply(thisArg,, [arg1, arg2, ..]);
     
-    Here, 'thisArg' can be a function or can be object also which is being
-    invokes as an argument to this 'someFunc' thus that 'someFunc' can be
-    used as that invoked object('thisArg') function because now 
-    'someFunc' having the block scope of that specified 'thisArg'.
+    Here, 'thisArg' can be a function or can be object also which is being invokes as an argument to
+    this 'someFunc' thus that 'someFunc' can be used as that invoked object('thisArg') function
+    because now 'someFunc' having the block scope of that specified 'thisArg'.
+    
     
 */
 

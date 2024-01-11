@@ -1,10 +1,13 @@
 /*
     Functional Prototypal Method- call() Method
     ===========================================
-    'this' keyword referes to object can be different in terms
-    of scope where the 'this' keyword is being written(basically 
-    whether its on Global, an object). This call() Method invokes the
-    function 'this' as an argument as well as take others arguments.
+    call() method basically used to call on a function to an object. Its basically invoke
+    a function to an object.
+
+    Now note- 'this' keyword referes to object can be different in terms of scope where 
+    the 'this' keyword is being written(basically whether its on Global, an object). 
+    This call() Method invokes the function 'this' as an argument as 
+    well as take others arguments.
 
     Syntax-
         someFunc.call(thisArg,, arg1, arg2, ...);
