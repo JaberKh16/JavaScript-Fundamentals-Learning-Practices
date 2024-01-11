@@ -13,6 +13,10 @@
     invokes as an argument to this 'someFunc' thus that 'someFunc' can be
     used as that invoked object('thisArg') function because now 
     'someFunc' having the block scope of that specified 'thisArg'.
+
+    Use Case Of call() Method
+    -------------------------
+    - Function Borrowing
     
 */
 

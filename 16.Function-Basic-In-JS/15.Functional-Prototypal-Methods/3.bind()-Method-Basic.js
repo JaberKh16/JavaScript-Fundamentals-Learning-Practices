@@ -1,13 +1,10 @@
 /*
     Functional Prototypal Method- bind() Method
     ===========================================
-    'this' keyword referes to object can be different in terms
-    of scope where the 'this' keyword is being written(basically 
-    whether its on Global, an object). This bind() Method returns
-    a function and also allow passing arguments as an array or
-    as a no. of arguments.
-
-
+    'this' keyword referes to object can be different in terms of scope where the 'this' keyword
+    is being written(basically whether its on Global, an object). This bind() Method returns
+    a function and also allow passing arguments as an array or as a no. of arguments.
+    
     Syntax-
         someFunc.bind(thisArg,, [arg1, arg2, ..], arg3, arg4,...);
     
@@ -17,9 +14,9 @@
     'someFunc' having the block scope of that specified 'thisArg' and creates
     a new function which can be called later.
 
-    Unlike the call(), apply() methods which executes the current function 
-    immediately whereas bind() method returns a new function(instead of invoking
-    a function immediately) which can be called later.
+    Unlike the call(), apply() methods which executes the current function immediately whereas 
+    bind() method returns a copy of the binds function (instead of invoking a 
+    function immediately) which can be called later.
 
     Use Case Of bind() Method
     -------------------------
