@@ -20,7 +20,7 @@
        time.
     3. Think of shooting game where rather making event function calls on
        user every clicks make a call on resource wise - 
-       
+
         a. Pistol --> make a call 300ms though pistol takes certain time to load
         b. Machine Gun --> though it brushfires so make call on 100ms
 
@@ -31,16 +31,24 @@ const getResouce = function () {
     console.log('Resources collected- ', collectedCount++);
 }
 
-const makeBouncing = (callback, delayTimer) =>{
-    let timer;
+const makeThroatling = (callback, limitInterval) =>{
+    let flag =  true;
     return function(){
-        let context = this;
-        const args = arguments;
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-            callback.apply(context, args);
-        }, delayTimer);
+        if(flag === true){
+            // function call
+            // callback(); // decent case without passed arguemtns
+            callback.apply(context, args); // handling passed arguments
+            flag = false; // to restrict the callback() function call
+            let context = this;
+            const args = arguments;
+      
+            setInterval(function () {
+                flag = true;
+                
+            }, limitInterval);
+        }
+       
     }
 }
 
-const debouncingOccurs = makeBouncing(getResouce, 300);
+const throatlingOccurs = makeBouncing(getResouce, 500);
