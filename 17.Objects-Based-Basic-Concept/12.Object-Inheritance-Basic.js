@@ -33,3 +33,4 @@ console.log(user);
 
 
 // check if the personInfo.__proto__ === user.__proto__
+console.log(user.prototype == personInfo.__proto__);
