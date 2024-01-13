@@ -23,6 +23,7 @@ const returningPromises = new Promise(function(resolve, reject) {
 })
 .then(function(result) {
     console.log(`Returned from 1st Promise: ${result}`); // prints 1
+    // returning a promise
     return new Promise((resolve, reject) => { // (*)
         setTimeout(() => resolve(result * 2), 1000); // resolved and has result 2
     });

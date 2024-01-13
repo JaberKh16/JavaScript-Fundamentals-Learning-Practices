@@ -7,13 +7,13 @@
     Similar like- resolve() callback, Promise.resolve() returns a 
     Promise object that is resolved with a given value.
 
-    In this case 3 things can happen-
+    In this case, 3 things can happen-
 
         1)  If the value is a promise then promise will returned
         2)  If the value has ".then()" attach to the promise then the 
             returned promise will follow that .then() to till the
             final state.
-        3) the promised fulfiled with its valeu will be returned.
+        3) the promised fulfiled with its value will be returned.
 */
 
 // defining the 'use strict' statement
@@ -41,7 +41,7 @@ const promise = new Promise(function(resolve, reject){
     }
 });
 
-// creating a function whihc returns a promise thus considered as promise
+// creating a function which returns a promise thus considered as promise
 const meetingFullInfo = (meetingInformation) =>{
     /* 1st way
     // return new Promise((resolve, reject)=>{

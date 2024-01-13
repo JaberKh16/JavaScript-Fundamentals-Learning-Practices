@@ -23,7 +23,7 @@ const promise2 = new Promise((resolve, reject) => {
     }, 3000);    
 });
 
-
+// handling both promises separateds
 promise1.then(value =>{
     console.log(value.toString());
 }).catch(error=>{

@@ -5,6 +5,9 @@
     operations and though they are easy to manage while dealing with multiple
     asynchronous operation where Callbacks might create a "Callback Hell".
 
+    Or, Promises is an object which handles the eventual completion or failure
+    of async operation.
+
     So, Promises are the ideal choice for handling multiple callbacks at the 
     same time, avoiding the undesired callback hell situation.
 
