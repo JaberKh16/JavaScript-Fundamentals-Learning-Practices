@@ -37,7 +37,7 @@
     Disadvantges Of Callback Function
     ---------------------------------
         a. Callback Hell
-        b. Inversion Of Code
+        b. Inversion Of Controll(Given Up Controll)
 
 */
 
