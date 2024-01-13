@@ -17,6 +17,11 @@
     To resolve that issue uses of Callback Functions in right way can 
     be very much helpful.
 
+    Disadvantage Of Callbacks
+    -------------------------
+        a. Callback Hell
+        b. Inversion Of Controll
+
 */
 
 const takingOrder = (customerNo, processingOrderFunc)=>{

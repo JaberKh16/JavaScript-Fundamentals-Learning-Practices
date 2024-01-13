@@ -72,7 +72,7 @@ try{
         console.log(this); // now 'this' has the scope of global
         console.log(`${this.fullName()} who age is ${this.age} works at ${companyName} in ${division} division.`);
     }
-    gettingPersonInfo1(); // hits an TypeError: this.fullName() is not a function
+    gettingPersonInfo1(); // hits a TypeError: this.fullName() is not a function
 }catch(error){
     console.log(error.toString());
 }

@@ -28,15 +28,16 @@
                 ii) revisedOrder() by Waiter[busy]
                 ii) processCooking() by Cook[busy]
 
-    Though the cooking is processing thus Customer-2 needs to wait to order.
+    Though the waiter and cook is busy processing thus Customer-2 needs to wait to order.
     After finishes the processCooking() now the "Cook" gets free and "Waiter"
     took the food and serve the order to "Customer-1".
 
-    And now "Waiter" can  go to the "Customer-2" and take his order and do the 
+    And now "Waiter" is free and can go to the "Customer-2" and take his order and do the 
     same work above.
 
 */
 
+// defintion function to process order
 const processOrder = function (customer){
     console.log(`Processing order for Customer-1`);
     // calculating the current time
