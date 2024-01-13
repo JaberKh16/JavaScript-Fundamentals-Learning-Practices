@@ -21,7 +21,7 @@
             2. window.resize
             3. scroll
             4. focus
-        b. use of stopPropagtion() method on element
+        b. use of stopPropagtion() method on element stops the propagation
         
 */
 
