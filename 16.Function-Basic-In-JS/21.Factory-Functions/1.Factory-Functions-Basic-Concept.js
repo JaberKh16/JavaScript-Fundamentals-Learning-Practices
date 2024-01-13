@@ -13,6 +13,7 @@
     -----------------------------
         a. Data Hiding/Privacy - cant mutate from outside
         b. DRY Support - Dont repeat code supports
+        c. Isolation Environment
 
 */
 
