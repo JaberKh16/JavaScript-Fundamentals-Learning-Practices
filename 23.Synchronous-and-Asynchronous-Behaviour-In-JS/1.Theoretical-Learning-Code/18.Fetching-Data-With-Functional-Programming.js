@@ -11,6 +11,15 @@
     a) Code Reusuability
     b) Scalable or Optimized Code
 
+    fetch() With Headers Passing
+    ----------------------------
+    const request = new Request(url, {
+        headers:{
+            'Authorization': 'Bearer API_KEY'
+        }
+    });
+    const responseObj = awati fetch(request) 
+
 */
 
 // defining 'use strict' statement
