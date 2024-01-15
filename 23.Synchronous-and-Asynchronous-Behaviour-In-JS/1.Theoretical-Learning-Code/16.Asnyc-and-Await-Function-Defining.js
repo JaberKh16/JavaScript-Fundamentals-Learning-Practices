@@ -29,6 +29,20 @@
     Syntax-
         let var = await promise; // await waits for the promise to resolve
 
+    About async/await while awaiting for the promise to resolve it might looks
+    like the program execution was stop, but that isn't the case basically
+    think of scenario - For an async operation it take some time to be 
+    settled(Promises), for that particular JS Eagine aka 'Call Stack' is running
+    doing its work, when 'Call Stack' seen the 'await' it suspend the promise
+    results 'Call Stack' removes the promises until its settled and after a
+    certain time when resolves put into the 'Call Stack' excutes. Now, the
+    execution order is it's executes-
+        a. all code into the stack before 'await'
+        b. after promises settled execute the next stack code
+           so if there were any synchronous code is placed after
+           'await' excutes that first and then excecutes promises
+            
+
 */
 
 // defining 'use strict' statement
