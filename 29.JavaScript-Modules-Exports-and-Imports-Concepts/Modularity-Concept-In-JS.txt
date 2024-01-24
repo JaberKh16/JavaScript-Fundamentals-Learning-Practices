@@ -1,5 +1,7 @@
 Modularity Concept In JS
 ========================
+Modularity is a concept of sharing one file resources to another file.
+
 Modularity Supports:
 	a. separation and organizing of codes or blocks
 	b. share code can be used which serves a single logic features to the larger business logic

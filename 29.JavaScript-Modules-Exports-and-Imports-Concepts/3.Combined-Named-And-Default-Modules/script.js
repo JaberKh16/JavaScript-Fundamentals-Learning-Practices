@@ -1,7 +1,6 @@
-import monkeypatch from "./module.js";
-import monkeySpecies from "./module.js";
+import { default as monkeySpecies, default as monkeypatch } from "./module.js";
 
-// // with single import
+// with single import
 // import monkeySpecies, {monkeypatch as monkeyp} from "./module.js";
 
 console.log("Welcome to know about default modules");

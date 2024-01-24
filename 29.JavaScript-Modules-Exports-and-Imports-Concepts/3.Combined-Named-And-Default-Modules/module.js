@@ -16,6 +16,7 @@
         b. For Importing:
             1. import varName from "./fileName.js";
             2. import varName as someVarName from "./fileName.js";
+            
 */
 
 // defining an object
@@ -37,4 +38,5 @@ const printSpeciesInfo = () =>{
 // export as default module
 export default {printSpeciesInfo};
 // export as named module
-export {monkeySpecies}
+export { monkeySpecies };
+
