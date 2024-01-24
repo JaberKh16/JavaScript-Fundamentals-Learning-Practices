@@ -10,9 +10,11 @@
     with match cases.
 
     Syntax- 
-        array.map(function (arr){
-            return  arr * 3
-        });
+        a.  array.map(function (arr){
+                return  arr * 3
+            });
+
+        b.  array.map(function(currentValue, index, arr), thisArg)
 
 */
 

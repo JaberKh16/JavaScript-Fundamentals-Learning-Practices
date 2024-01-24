@@ -5,12 +5,12 @@
     from the array with specified logic(condition matches).
 
     Syntax- 
-        array.filter(function (){
+        a.  array.filter(function (){
 
-        });
+            });
 
-        function(value, index, array){}; // value returns valus, index for index and array is is for the array
-
+        b. function(value, index, array){}; // value returns valus, index for index and array is is for the array
+        c. array.filter(function(currentValue, index, arr), thisArg)
 */
 
 // defining the 'use strict' statement

@@ -22,6 +22,10 @@
     website.It allows to add, modify and delete data items for that domain.
     The data in stored with no expiration data and will not be deleted until the
     browser is closed. Data can be available for days, weeks and years.
+    
+    Note: localStorage can only store string so in case of array or object
+    need to use JSON.stringify() method. And then to convert it to back to
+    the original array or object use JSON.parse() method. 
 
     sessionStorage Object
     ---------------------
