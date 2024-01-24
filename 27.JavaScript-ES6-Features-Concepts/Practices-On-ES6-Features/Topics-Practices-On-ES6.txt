@@ -1,0 +1,17 @@
+Topics To Cover On JS Practices ES6
+===================================
+a. Variable Definition - let and const
+b. Template/Interpolation String
+c. Function Concepts-
+    a. Arrow Function
+    b. Default Parameter
+d. Operator-
+    a. rest Parameter
+    b. spread Parameter
+e. Loop Concepts-
+    a. of Loop
+    b. in Loop
+f. Destructuring
+g. Data Types-
+    a. Map
+    b. Set
