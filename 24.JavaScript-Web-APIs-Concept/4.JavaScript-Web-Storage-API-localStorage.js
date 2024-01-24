@@ -25,7 +25,7 @@
     
     Note: localStorage can only store string so in case of array or object
     need to use JSON.stringify() method. And then to convert it to back to
-    the original array or object use JSON.parse() method. 
+    the object use JSON.parse() method. 
 
     sessionStorage Object
     ---------------------
