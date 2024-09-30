@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.name-input {
+  border: 2px solid #333;
+  padding: 6px;
+  margin: 10px;
+  border: 2px solid #0f071b;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-add {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: #1a1a1c;
+  border: 1px solid #0f071b;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+.btn-spin {
+  padding: 10px 40px;
+  color: #ffffff;
+  background-color: #063505;
+  border: 1px solid #0f071b;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+.wheel-container {
+  position: relative;
+  display: inline-block;
+}
+
+.wheel {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #046e5a;
+  border-radius: 50%;
+  margin: 80px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.center-indicator {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  color: red;
+}
+
+.segment {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: left center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.segment-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  transform: rotate(90deg) translateX(50%);
+  white-space: nowrap;
+  font-size: 1em;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+#result {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
