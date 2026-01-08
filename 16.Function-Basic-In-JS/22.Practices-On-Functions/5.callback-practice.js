@@ -16,3 +16,14 @@ const srcPropeties = {
 loadScript(srcPropeties, (script) => {
     console.log(`${script.src} is loaded...`)
 })
+
+
+// Example-2: Sum Calculation
+function getSalary(salary, tax, callback){
+    let netSalary = salary - (salary * tax);
+    callback(netSalary);
+}
+
+getSalary(5000, 0.1, (netSalary) => {
+    console.log(`Net Salary is: ${netSalary}`);
+});
