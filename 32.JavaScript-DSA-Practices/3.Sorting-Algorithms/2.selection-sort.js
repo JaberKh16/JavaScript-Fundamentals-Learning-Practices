@@ -33,17 +33,17 @@
 // Basic Selection Sort Implementation
 function selectionSort(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
-        // Find the minimum element in unsorted array
-        let minIndex = i;
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[j] < arr[minIndex]) {
+        let minIndex = i; // set the minimum index 
+        for(let j = i + 1; j < arr.length; j++){
+            if(arr[j] > arr[minIndex]){
                 minIndex = j;
             }
         }
-        
-        // Swap the found minimum element with the first element
-        if (minIndex !== i) {
-            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+        // perfrom the swap of index value
+        if(minIndex !== i){
+            let temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
         }
     }
     return arr;
@@ -72,4 +72,5 @@ function selectionSortES6(arr) {
 
 // Test the implementations
 console.log("Selection Sort:", selectionSort([64, 34, 25, -12, 22, -11, 90]));
-console.log("ES6 Selection Sort:", selectionSortES6([64, 34, 25, -12, 22, -11, 90]));
+// console.log("ES6 Selection Sort:", selectionSortES6([64, 34, 25, -12, 22, -11, 90]));
+
