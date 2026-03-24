@@ -19,15 +19,15 @@ function pivot(arr, start=0, end = arr.length-1){
 // print
 console.log(pivot([4, 8, 2, 1, 5, 7, 6, 3]));
 
-// function quickSort(arr, left = 0, right = arr.length - 1){
-//     if(left < right){
-//         let pivotIndex = pivot(arr, left, right);
-//         // left
-//         quickSort(arr, left, pivotIndex - 1);
-//         // right
-//         quickSort(arr, pivotIndex + 1, right);
-//     }
-//     return arr;
-// }
+function quickSort(arr, left = 0, right = arr.length - 1){
+    if(left < right){
+        let pivotIndex = pivot(arr, left, right);
+        // left
+        quickSort(arr, left, pivotIndex - 1);
+        // right
+        quickSort(arr, pivotIndex + 1, right);
+    }
+    return arr;
+}
 
 // console.log(quickSort([4, 8, 2, 1, 5, 7, 6, 3]));
